@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairos Lab | Soluciones con Impacto Real</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sky: {
+                            50: '#f0fdfd', 100: '#ccfbf9', 200: '#99f6f4', 300: '#5eead4',
+                            400: '#2dd4bf', 500: '#0de8e1', 600: '#0bbfb9', 700: '#0f766e',
+                            800: '#115e59', 900: '#134e4a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0de8e1; }
+        html { scroll-behavior: smooth; }
+        .glass { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(16px); }
+        .hero-gradient { background: radial-gradient(circle at center, rgba(13, 232, 225, 0.07) 0%, transparent 70%); }
+        .card-hover:hover { transform: translateY(-5px); border-color: rgba(13, 232, 225, 0.4); }
+        .logo-clean { mix-blend-mode: screen; }
+    </style>
+</head>
+<body class="bg-[#050505] font-sans text-gray-400 selection:bg-sky-500/30">
+
+    <nav class="glass border-b border-white/5 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex-shrink-0">
+                    <img src="Public/Logo.png" alt="Kairos Lab" class="h-14 w-auto block logo-clean" />
+                </div>
+                
+                <div class="hidden md:flex space-x-10 text-[12px] uppercase tracking-[0.2em] font-medium ml-auto">
+                    <a href="#inicio" class="text-white hover:text-sky-400 transition-colors">Inicio</a>
+                    <a href="#nosotros" class="hover:text-sky-400 transition-colors">Nosotros</a>
+                    <a href="#servicios" class="hover:text-sky-400 transition-colors">Servicios</a>
+                    <a href="#metodologia" class="hover:text-sky-400 transition-colors">Metodología</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative pt-32 pb-32 overflow-hidden hero-gradient">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-8 leading-[1.1]">
+                Identificamos problemas.<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-100">Construimos soluciones.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
+                Ayudamos a PyMEs a resolver problemas operativos de forma simple, rápida y sostenible. Sin proyectos largos. Solo impacto real.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#servicios" class="bg-sky-500 text-black px-10 py-4 rounded-full font-bold hover:bg-white transition-all text-sm uppercase tracking-widest">
+                    Nuestros Servicios
+                </a>
+                <a href="#nosotros" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest">
+                    Quiénes Somos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col">
+                    <h2 class="text-4xl font-bold text-white mb-8 tracking-tight">IA con Impacto Real y Sostenible.</h2>
+                    <p class="text-lg text-gray-400 leading-relaxed font-light mb-10">
+                        Kairos Lab es una agencia de soluciones con Inteligencia Artificial que ayuda a PyMEs a resolver problemas operativos reales de forma simple, rápida y sostenible. Actuamos como socio estratégico, combinando diagnóstico, diseño, implementación y acompañamiento continuo.
+                    </p>
+                    <div class="mt-auto p-8 border-l border-sky-500/50 bg-white/5 rounded-r-2xl text-left">
+                        <p class="text-white italic text-lg font-medium">"Nuestro proceso de discovery existe con un único propósito: reunir los requisitos correctos para construir la solución correcta".</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col">
+                    <h3 class="text-2xl font-bold text-white mb-10">Cómo Agregamos Valor</h3>
+                    <div class="space-y-10 text-left text-gray-400">
+                        <div>
+                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3">Identificación con Propósito</h4>
+                            <p class="text-base font-light leading-relaxed">Mapeamos ineficiencias, procesos rotos y tareas repetitivas para entender exactamente qué necesita el negocio — ni más, ni menos.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3">IA Mínima Efectiva</h4>
+                            <p class="text-base font-light leading-relaxed">Diseñamos la solución más simple posible que resuelva el problema, evitando proyectos largos y sobreconstrucción técnica.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3">Mejora Continua</h4>
+                            <p class="text-base font-light leading-relaxed">Las soluciones evolucionan mediante ajustes finos basados en el uso real para generar un impacto acumulado sostenible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-32 bg-[#080808]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto">Diseñamos, implementamos y acompañamos soluciones integradas al negocio real.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
+                    <i data-lucide="refresh-cw" class="text-sky-400 w-10 h-10 mb-8"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Automatizaciones</h3>
+                    <p class="text-gray-400 font-light mb-6">Aumentamos la eficiencia operativa mediante automatización inteligente. La IA opera como motor invisible detrás de flujos simples y claros.</p>
+                    <div class="grid grid-cols-2 gap-4 text-[11px] uppercase tracking-widest font-semibold text-gray-500">
+                        <ul class="space-y-2">
+                            <li class="text-sky-500/80">Operaciones</li>
+                            <li>• Revisión de pedidos</li>
+                            <li>• Reportes automáticos</li>
+                            <li>• Clasificación correos</li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li class="text-sky-500/80">Gestión</li>
+                            <li>• Gestión de tickets</li>
+                            <li>• Rediseño de flujos</li>
+                            <li>• Reducción de errores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
+                    <i data-lucide="cpu" class="text-sky-400 w-10 h-10 mb-8"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Agentes de IA</h3>
+                    <p class="text-gray-400 font-light mb-6">Implementamos expertos internos 24/7 que ejecutan tareas por lenguaje natural y actúan a una fracción del costo de un empleado humano.</p>
+                    <div class="grid grid-cols-2 gap-4 text-[11px] uppercase tracking-widest font-semibold text-gray-500">
+                        <ul class="space-y-2">
+                            <li class="text-sky-500/80">Inteligencia</li>
+                            <li>• Ejecución autónoma</li>
+                            <li>• Análisis predictivo</li>
+                            <li>• Decisiones rápidas</li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li class="text-sky-500/80">Escalabilidad</li>
+                            <li>• Operan entre áreas</li>
+                            <li>• Eliminan silos</li>
+                            <li>• Integración sistemas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
+                    <i data-lucide="layout" class="text-sky-400 w-10 h-10 mb-8"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Desarrollo de Aplicaciones</h3>
+                    <p class="text-gray-400 font-light mb-6">Apps que estructuran procesos y centralizan la interacción con la IA. Organizan operaciones, automatizan decisiones y conectan equipos.</p>
+                </div>
+
+                <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
+                    <i data-lucide="users" class="text-sky-400 w-10 h-10 mb-8"></i>
+                    <h3 class="text-2xl font-bold text-white mb-4">Capacitación y Adopción</h3>
+                    <p class="text-gray-400 font-light mb-6">Acompañamos la gestión del cambio organizacional y hábitos de uso para asegurar que la tecnología genere impacto real y valor sostenido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="metodologia" class="py-32 bg-[#050505]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-20 text-center">Nuestra Metodología</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
+                    <div class="text-sky-500 mb-6"><i data-lucide="target" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Definimos el caso de negocio</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                        Identificamos el problema operativo raíz, validamos que la solución sea necesaria.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
+                    <div class="text-sky-500 mb-6"><i data-lucide="bar-chart-3" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Establecemos objetivos medibles</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                        Lo que no se mide no se puede mejorar. Definimos KPIs claros y métricas de éxito antes de implementar, garantizando que cada automatización tenga un propósito transparente.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
+                    <div class="text-sky-500 mb-6"><i data-lucide="trending-up" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Optimizamos resultados</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                        Implementamos un piloto para obtener datos reales. Monitoreamos el rendimiento y realizamos ajustes constantes; pequeñas mejoras en esta etapa generan un gran impacto acumulado en el tiempo.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
+                    <div class="text-sky-500 mb-6"><i data-lucide="rocket" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Escalamos</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                        Actuamos como tu socio a largo plazo, asegurando que el gobierno de la IA sea responsable, seguro y escalable para tu crecimiento sostenible.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-20 p-10 bg-white/5 rounded-[40px] border border-sky-500/20 text-center">
+                <p class="text-xl text-white font-light">
+                    "Identificamos problemas operativos reales y construimos la solución más simple para resolverlos — <span class="text-sky-400 font-bold uppercase tracking-widest text-lg">rápido, con impacto y mejora continua.</span>"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 border-t border-white/5 bg-[#050505]">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 tracking-tight">Socio estratégico para la<br/>adopción de IA.</h2>
+            <a href="https://lucianocribeiro.app.n8n.cloud/form/208cd333-2999-4506-b831-d56341aa036c" target="_blank" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black hover:bg-sky-400 transition-all mb-20 text-xs uppercase tracking-widest">
+                Contactar
+            </a>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-white/5 gap-8 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-600">
+                <img src="Public/Logo.png" alt="Kairos Lab" class="h-11 opacity-40 logo-clean" />
+                <p>&copy; 2026 Kairos Lab. Soluciones con Impacto Real.</p>
+                <div class="hidden md:block w-32"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
