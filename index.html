@@ -61,11 +61,17 @@
                 </div>
                 
                 <div class="hidden md:flex space-x-10 text-[12px] uppercase tracking-[0.2em] font-medium ml-auto">
-                    <a href="#inicio" class="text-white hover:text-sky-400 transition-colors">Inicio</a>
-                    <a href="#nosotros" class="hover:text-sky-400 transition-colors">Nosotros</a>
-                    <a href="#servicios" class="hover:text-sky-400 transition-colors">Servicios</a>
-                    <a href="#metodologia" class="hover:text-sky-400 transition-colors">Metodología</a>
-                    <a href="https://lucianocribeiro.app.n8n.cloud/form/33b1eac2-b581-4f40-8a59-20cd4c0770b5" target="_blank" rel="noopener" class="hover:text-sky-400 transition-colors">Contactar</a>
+                    <a href="#inicio" class="text-white hover:text-sky-400 transition-colors" data-i18n="nav_home">Inicio</a>
+                    <a href="#nosotros" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Nosotros</a>
+                    <a href="#servicios" class="hover:text-sky-400 transition-colors" data-i18n="nav_services">Servicios</a>
+                    <a href="#metodologia" class="hover:text-sky-400 transition-colors" data-i18n="nav_methodology">Metodología</a>
+                    <a href="https://lucianocribeiro.app.n8n.cloud/form/33b1eac2-b581-4f40-8a59-20cd4c0770b5" target="_blank" rel="noopener" class="hover:text-sky-400 transition-colors" data-i18n="nav_contact">Contactar</a>
+                </div>
+                <div class="hidden md:flex items-center ml-8">
+                    <div class="inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1 text-[10px] uppercase tracking-[0.2em] font-semibold">
+                        <button type="button" data-lang="es" class="px-3 py-2 rounded-full text-white hover:text-sky-400 transition-colors">ES</button>
+                        <button type="button" data-lang="en" class="px-3 py-2 rounded-full text-white hover:text-sky-400 transition-colors">EN</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,18 +79,18 @@
 
     <section id="inicio" class="relative pt-32 pb-32 overflow-hidden hero-gradient">
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-8 leading-[1.1]">
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-8 leading-[1.1]" data-i18n-html="hero_title">
                 Identificamos problemas.<br/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-100">Construimos soluciones.</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12 font-light" data-i18n="hero_subtitle">
                 Transformamos tu operación alineando tecnología con procesos eficientes. Resolvemos problemas reales de forma simples, rápida y sostenible.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="#servicios" class="bg-sky-500 text-black px-10 py-4 rounded-full font-bold hover:bg-white transition-all text-sm uppercase tracking-widest">
+                <a href="#servicios" class="bg-sky-500 text-black px-10 py-4 rounded-full font-bold hover:bg-white transition-all text-sm uppercase tracking-widest" data-i18n="hero_cta_services">
                     Nuestros Servicios
                 </a>
-                <a href="#nosotros" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest">
+                <a href="#nosotros" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest" data-i18n="hero_cta_about">
                     Quiénes Somos
                 </a>
             </div>
@@ -95,29 +101,29 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-8 items-stretch">
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col">
-                    <h2 class="text-4xl font-bold text-white mb-8 tracking-tight">IA con Impacto Real y Sostenible.</h2>
-                    <p class="text-lg text-gray-400 leading-relaxed font-light mb-10">
+                    <h2 class="text-4xl font-bold text-white mb-8 tracking-tight" data-i18n="about_title">IA con Impacto Real y Sostenible.</h2>
+                    <p class="text-lg text-gray-400 leading-relaxed font-light mb-10" data-i18n="about_body">
                         Kairos Lab es una agencia de soluciones con Inteligencia Artificial que ayuda a PyMEs a resolver problemas operativos reales de forma simples, rápida y sostenible. Actuamos como socio estratégico, combinando diagnóstico, diseño, implementación y acompañamiento continuo.
                     </p>
                     <div class="mt-auto p-8 border-l border-sky-500/50 bg-white/5 rounded-r-2xl text-left">
-                        <p class="text-white italic text-lg font-medium">"Nuestro proceso de discovery existe con un único propósito: reunir los requisitos correctos para construir la solución correcta".</p>
+                        <p class="text-white italic text-lg font-medium" data-i18n="about_quote">"Nuestro proceso de discovery existe con un único propósito: reunir los requisitos correctos para construir la solución correcta".</p>
                     </div>
                 </div>
 
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col">
-                    <h3 class="text-2xl font-bold text-white mb-10">Cómo Agregamos Valor</h3>
+                    <h3 class="text-2xl font-bold text-white mb-10" data-i18n="value_title">Cómo Agregamos Valor</h3>
                     <div class="space-y-10 text-left text-gray-400">
                         <div>
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3">Identificación con Propósito</h4>
-                            <p class="text-base font-light leading-relaxed">Mapeamos ineficiencias, procesos inconsistentes y tareas repetitivas para entender exactamente qué necesita el negocio — ni más, ni menos.</p>
+                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3" data-i18n="value_1_title">Identificación con Propósito</h4>
+                            <p class="text-base font-light leading-relaxed" data-i18n="value_1_body">Mapeamos ineficiencias, procesos inconsistentes y tareas repetitivas para entender exactamente qué necesita el negocio — ni más, ni menos.</p>
                         </div>
                         <div>
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3">IA Mínima Efectiva</h4>
-                            <p class="text-base font-light leading-relaxed">Diseñamos la solución más simple posible que resuelva el problema, evitando proyectos largos y sobreconstrucción técnica.</p>
+                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3" data-i18n="value_2_title">IA Mínima Efectiva</h4>
+                            <p class="text-base font-light leading-relaxed" data-i18n="value_2_body">Diseñamos la solución más simple posible que resuelva el problema, evitando proyectos largos y sobreconstrucción técnica.</p>
                         </div>
                         <div>
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3">Mejora Continua</h4>
-                            <p class="text-base font-light leading-relaxed">Las soluciones evolucionan mediante ajustes finos basados en el uso real para generar un impacto acumulado sostenible.</p>
+                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3" data-i18n="value_3_title">Mejora Continua</h4>
+                            <p class="text-base font-light leading-relaxed" data-i18n="value_3_body">Las soluciones evolucionan mediante ajustes finos basados en el uso real para generar un impacto acumulado sostenible.</p>
                         </div>
                     </div>
                 </div>
@@ -128,61 +134,61 @@
     <section id="servicios" class="py-32 bg-[#080808]">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Nuestros Servicios</h2>
-                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto">Diseñamos, implementamos y acompañamos soluciones integradas al negocio real.</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight" data-i18n="services_title">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="services_subtitle">Diseñamos, implementamos y acompañamos soluciones integradas al negocio real.</p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
                     <i data-lucide="refresh-cw" class="text-sky-400 w-10 h-10 mb-8"></i>
-                    <h3 class="text-2xl font-bold text-white mb-4">Automatizaciones</h3>
-                    <p class="text-gray-400 font-light mb-6">Aumentamos la eficiencia operativa mediante automatización inteligente. La IA opera como motor invisible detrás de flujos simples y claros.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4" data-i18n="services_1_title">Automatizaciones</h3>
+                    <p class="text-gray-400 font-light mb-6" data-i18n="services_1_body">Aumentamos la eficiencia operativa mediante automatización inteligente. La IA opera como motor invisible detrás de flujos simples y claros.</p>
                     <div class="grid grid-cols-2 gap-4 text-[11px] uppercase tracking-widest font-semibold text-gray-500">
                         <ul class="space-y-2">
-                            <li class="text-sky-500/80">Operaciones</li>
-                            <li>• Revisión de pedidos</li>
-                            <li>• Reportes automáticos</li>
-                            <li>• Clasificación correos</li>
+                            <li class="text-sky-500/80" data-i18n="services_1_list_1_title">Operaciones</li>
+                            <li data-i18n="services_1_list_1_item_1">• Revisión de pedidos</li>
+                            <li data-i18n="services_1_list_1_item_2">• Reportes automáticos</li>
+                            <li data-i18n="services_1_list_1_item_3">• Clasificación correos</li>
                         </ul>
                         <ul class="space-y-2">
-                            <li class="text-sky-500/80">Gestión</li>
-                            <li>• Gestión de tickets</li>
-                            <li>• Rediseño de flujos</li>
-                            <li>• Reducción de errores</li>
+                            <li class="text-sky-500/80" data-i18n="services_1_list_2_title">Gestión</li>
+                            <li data-i18n="services_1_list_2_item_1">• Gestión de tickets</li>
+                            <li data-i18n="services_1_list_2_item_2">• Rediseño de flujos</li>
+                            <li data-i18n="services_1_list_2_item_3">• Reducción de errores</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
                     <i data-lucide="cpu" class="text-sky-400 w-10 h-10 mb-8"></i>
-                    <h3 class="text-2xl font-bold text-white mb-4">Agentes de IA</h3>
-                    <p class="text-gray-400 font-light mb-6">Implementamos expertos internos 24/7 que ejecutan tareas por lenguaje natural y actúan a una fracción del costo de un empleado humano.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4" data-i18n="services_2_title">Agentes de IA</h3>
+                    <p class="text-gray-400 font-light mb-6" data-i18n="services_2_body">Implementamos expertos internos 24/7 que ejecutan tareas por lenguaje natural y actúan a una fracción del costo de un empleado humano.</p>
                     <div class="grid grid-cols-2 gap-4 text-[11px] uppercase tracking-widest font-semibold text-gray-500">
                         <ul class="space-y-2">
-                            <li class="text-sky-500/80">Inteligencia</li>
-                            <li>• Ejecución autónoma</li>
-                            <li>• Análisis predictivo</li>
-                            <li>• Decisiones rápidas</li>
+                            <li class="text-sky-500/80" data-i18n="services_2_list_1_title">Inteligencia</li>
+                            <li data-i18n="services_2_list_1_item_1">• Ejecución autónoma</li>
+                            <li data-i18n="services_2_list_1_item_2">• Análisis predictivo</li>
+                            <li data-i18n="services_2_list_1_item_3">• Decisiones rápidas</li>
                         </ul>
                         <ul class="space-y-2">
-                            <li class="text-sky-500/80">Escalabilidad</li>
-                            <li>• Operan entre áreas</li>
-                            <li>• Eliminan silos</li>
-                            <li>• Integración sistemas</li>
+                            <li class="text-sky-500/80" data-i18n="services_2_list_2_title">Escalabilidad</li>
+                            <li data-i18n="services_2_list_2_item_1">• Operan entre áreas</li>
+                            <li data-i18n="services_2_list_2_item_2">• Eliminan silos</li>
+                            <li data-i18n="services_2_list_2_item_3">• Integración sistemas</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
                     <i data-lucide="layout" class="text-sky-400 w-10 h-10 mb-8"></i>
-                    <h3 class="text-2xl font-bold text-white mb-4">Desarrollo de Aplicaciones</h3>
-                    <p class="text-gray-400 font-light mb-6">Apps que estructuran procesos y centralizan la interacción con la IA. Organizan operaciones, automatizan decisiones y conectan equipos.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4" data-i18n="services_3_title">Desarrollo de Aplicaciones</h3>
+                    <p class="text-gray-400 font-light mb-6" data-i18n="services_3_body">Apps que estructuran procesos y centralizan la interacción con la IA. Organizan operaciones, automatizan decisiones y conectan equipos.</p>
                 </div>
 
                 <div class="group p-10 bg-[#0a0a0a] border border-white/5 rounded-[40px] card-hover transition-all">
                     <i data-lucide="users" class="text-sky-400 w-10 h-10 mb-8"></i>
-                    <h3 class="text-2xl font-bold text-white mb-4">Capacitación y Adopción</h3>
-                    <p class="text-gray-400 font-light mb-6">Acompañamos la gestión del cambio organizacional y hábitos de uso para asegurar que la tecnología genere impacto real y valor sostenido.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4" data-i18n="services_4_title">Capacitación y Adopción</h3>
+                    <p class="text-gray-400 font-light mb-6" data-i18n="services_4_body">Acompañamos la gestión del cambio organizacional y hábitos de uso para asegurar que la tecnología genere impacto real y valor sostenido.</p>
                 </div>
             </div>
         </div>
@@ -190,38 +196,38 @@
 
    <section id="metodologia" class="py-32 bg-[#050505]">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-20 text-center">Nuestra Metodología</h2>
+            <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-20 text-center" data-i18n="methodology_title">Nuestra Metodología</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
                 
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
                     <div class="text-sky-500 mb-6"><i data-lucide="target" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4">Definimos el caso de negocio</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    <h3 class="text-xl font-bold text-white mb-4" data-i18n="methodology_1_title">Definimos el caso de negocio</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed" data-i18n="methodology_1_body">
                         Identificamos el problema operativo raíz, validamos que la solución sea necesaria.
                     </p>
                 </div>
 
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
                     <div class="text-sky-500 mb-6"><i data-lucide="bar-chart-3" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4">Establecemos objetivos medibles</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    <h3 class="text-xl font-bold text-white mb-4" data-i18n="methodology_2_title">Establecemos objetivos medibles</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed" data-i18n="methodology_2_body">
                         Lo que no se mide no se puede mejorar. Definimos KPIs claros y métricas de éxito antes de implementar, garantizando que cada automatización tenga un propósito transparente.
                     </p>
                 </div>
 
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
                     <div class="text-sky-500 mb-6"><i data-lucide="trending-up" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4">Optimizamos resultados</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    <h3 class="text-xl font-bold text-white mb-4" data-i18n="methodology_3_title">Optimizamos resultados</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed" data-i18n="methodology_3_body">
                         Implementamos un piloto para obtener datos reales. Monitoreamos el rendimiento y realizamos ajustes constantes; pequeñas mejoras en esta etapa generan un gran impacto acumulado en el tiempo.
                     </p>
                 </div>
 
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover transition-all flex flex-col">
                     <div class="text-sky-500 mb-6"><i data-lucide="rocket" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4">Escalamos</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    <h3 class="text-xl font-bold text-white mb-4" data-i18n="methodology_4_title">Escalamos</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed" data-i18n="methodology_4_body">
                         Actuamos como tu socio a largo plazo, asegurando que el gobierno de la IA sea responsable, seguro y escalable para tu crecimiento sostenible.
                     </p>
                 </div>
@@ -229,7 +235,7 @@
             </div>
 
             <div class="mt-20 p-10 bg-white/5 rounded-[40px] border border-sky-500/20 text-center">
-                <p class="text-xl text-white font-light">
+                <p class="text-xl text-white font-light" data-i18n-html="methodology_quote">
                     "Identificamos problemas operativos reales y construimos la solución más simple para resolverlos — <span class="text-sky-400 font-bold uppercase tracking-widest text-lg">rápido, con impacto y mejora continua.</span>"
                 </p>
             </div>
@@ -238,16 +244,16 @@
 
     <footer class="py-24 border-t border-white/5 bg-[#050505]">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 tracking-tight">Socio estratégico para la<br/>adopción de IA.</h2>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 tracking-tight" data-i18n-html="footer_title">Socio estratégico para la<br/>adopción de IA.</h2>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-20">
-                <a href="https://lucianocribeiro.app.n8n.cloud/form/33b1eac2-b581-4f40-8a59-20cd4c0770b5" target="_blank" rel="noopener" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black hover:bg-sky-400 transition-all text-xs uppercase tracking-widest">
+                <a href="https://lucianocribeiro.app.n8n.cloud/form/33b1eac2-b581-4f40-8a59-20cd4c0770b5" target="_blank" rel="noopener" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black hover:bg-sky-400 transition-all text-xs uppercase tracking-widest" data-i18n="footer_cta">
                     Contactar
                 </a>
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-white/5 gap-8 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-600">
                 <img src="Public/Logo.png" alt="Kairos Lab" class="h-11 opacity-40 logo-clean" />
-                <p>&copy; 2026 Kairos Lab. Soluciones con Impacto Real.</p>
-                <a href="https://www.linkedin.com/company/agkairos-labs/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/10 text-gray-400 hover:text-white hover:border-white/30 transition-all">
+                <p data-i18n="footer_copy">&copy; 2026 Kairos Lab. Soluciones con Impacto Real.</p>
+                <a href="https://www.linkedin.com/company/agkairos-labs/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" data-i18n-aria="footer_linkedin_aria" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/10 text-gray-400 hover:text-white hover:border-white/30 transition-all">
                     <i data-lucide="linkedin" class="w-4 h-4"></i>
                 </a>
             </div>
@@ -255,6 +261,177 @@
     </footer>
 
     <script>
+        const translations = {
+            es: {
+                title: "Kairos Lab | Soluciones con Impacto Real",
+                nav_home: "Inicio",
+                nav_about: "Nosotros",
+                nav_services: "Servicios",
+                nav_methodology: "Metodología",
+                nav_contact: "Contactar",
+                hero_title: "Identificamos problemas.<br/><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-100\">Construimos soluciones.</span>",
+                hero_subtitle: "Transformamos tu operación alineando tecnología con procesos eficientes. Resolvemos problemas reales de forma simples, rápida y sostenible.",
+                hero_cta_services: "Nuestros Servicios",
+                hero_cta_about: "Quiénes Somos",
+                about_title: "IA con Impacto Real y Sostenible.",
+                about_body: "Kairos Lab es una agencia de soluciones con Inteligencia Artificial que ayuda a PyMEs a resolver problemas operativos reales de forma simples, rápida y sostenible. Actuamos como socio estratégico, combinando diagnóstico, diseño, implementación y acompañamiento continuo.",
+                about_quote: "\"Nuestro proceso de discovery existe con un único propósito: reunir los requisitos correctos para construir la solución correcta\".",
+                value_title: "Cómo Agregamos Valor",
+                value_1_title: "Identificación con Propósito",
+                value_1_body: "Mapeamos ineficiencias, procesos inconsistentes y tareas repetitivas para entender exactamente qué necesita el negocio — ni más, ni menos.",
+                value_2_title: "IA Mínima Efectiva",
+                value_2_body: "Diseñamos la solución más simple posible que resuelva el problema, evitando proyectos largos y sobreconstrucción técnica.",
+                value_3_title: "Mejora Continua",
+                value_3_body: "Las soluciones evolucionan mediante ajustes finos basados en el uso real para generar un impacto acumulado sostenible.",
+                services_title: "Nuestros Servicios",
+                services_subtitle: "Diseñamos, implementamos y acompañamos soluciones integradas al negocio real.",
+                services_1_title: "Automatizaciones",
+                services_1_body: "Aumentamos la eficiencia operativa mediante automatización inteligente. La IA opera como motor invisible detrás de flujos simples y claros.",
+                services_1_list_1_title: "Operaciones",
+                services_1_list_1_item_1: "• Revisión de pedidos",
+                services_1_list_1_item_2: "• Reportes automáticos",
+                services_1_list_1_item_3: "• Clasificación correos",
+                services_1_list_2_title: "Gestión",
+                services_1_list_2_item_1: "• Gestión de tickets",
+                services_1_list_2_item_2: "• Rediseño de flujos",
+                services_1_list_2_item_3: "• Reducción de errores",
+                services_2_title: "Agentes de IA",
+                services_2_body: "Implementamos expertos internos 24/7 que ejecutan tareas por lenguaje natural y actúan a una fracción del costo de un empleado humano.",
+                services_2_list_1_title: "Inteligencia",
+                services_2_list_1_item_1: "• Ejecución autónoma",
+                services_2_list_1_item_2: "• Análisis predictivo",
+                services_2_list_1_item_3: "• Decisiones rápidas",
+                services_2_list_2_title: "Escalabilidad",
+                services_2_list_2_item_1: "• Operan entre áreas",
+                services_2_list_2_item_2: "• Eliminan silos",
+                services_2_list_2_item_3: "• Integración sistemas",
+                services_3_title: "Desarrollo de Aplicaciones",
+                services_3_body: "Apps que estructuran procesos y centralizan la interacción con la IA. Organizan operaciones, automatizan decisiones y conectan equipos.",
+                services_4_title: "Capacitación y Adopción",
+                services_4_body: "Acompañamos la gestión del cambio organizacional y hábitos de uso para asegurar que la tecnología genere impacto real y valor sostenido.",
+                methodology_title: "Nuestra Metodología",
+                methodology_1_title: "Definimos el caso de negocio",
+                methodology_1_body: "Identificamos el problema operativo raíz, validamos que la solución sea necesaria.",
+                methodology_2_title: "Establecemos objetivos medibles",
+                methodology_2_body: "Lo que no se mide no se puede mejorar. Definimos KPIs claros y métricas de éxito antes de implementar, garantizando que cada automatización tenga un propósito transparente.",
+                methodology_3_title: "Optimizamos resultados",
+                methodology_3_body: "Implementamos un piloto para obtener datos reales. Monitoreamos el rendimiento y realizamos ajustes constantes; pequeñas mejoras en esta etapa generan un gran impacto acumulado en el tiempo.",
+                methodology_4_title: "Escalamos",
+                methodology_4_body: "Actuamos como tu socio a largo plazo, asegurando que el gobierno de la IA sea responsable, seguro y escalable para tu crecimiento sostenible.",
+                methodology_quote: "\"Identificamos problemas operativos reales y construimos la solución más simple para resolverlos — <span class=\"text-sky-400 font-bold uppercase tracking-widest text-lg\">rápido, con impacto y mejora continua.</span>\"",
+                footer_title: "Socio estratégico para la<br/>adopción de IA.",
+                footer_cta: "Contactar",
+                footer_copy: "© 2026 Kairos Lab. Soluciones con Impacto Real.",
+                footer_linkedin_aria: "LinkedIn"
+            },
+            en: {
+                title: "Kairos Lab | Solutions with Real Impact",
+                nav_home: "Home",
+                nav_about: "About",
+                nav_services: "Services",
+                nav_methodology: "Methodology",
+                nav_contact: "Contact",
+                hero_title: "We identify problems.<br/><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-100\">And build solutions.</span>",
+                hero_subtitle: "Transform your operation by aligning technology with efficient processes. We solve real problems in a simple, fast, and sustainable way.",
+                hero_cta_services: "Our Services",
+                hero_cta_about: "Who We Are",
+                about_title: "AI with Real, Sustainable Impact.",
+                about_body: "Kairos Lab is an AI solutions agency that helps SMEs solve real operational problems in a simple, fast, and sustainable way. We act as a strategic partner, combining diagnosis, design, implementation, and ongoing support.",
+                about_quote: "\"Our discovery process exists for one purpose: to gather the right requirements to build the right solution.\"",
+                value_title: "How We Add Value",
+                value_1_title: "Purposeful Identification",
+                value_1_body: "Identifying inefficiencies, inconsistent processes, and repetitive tasks to understand exactly what the business needs — no more, no less.",
+                value_2_title: "Minimum Effective AI",
+                value_2_body: "Designing the simplest solution that solves the problem, avoiding long projects and technical overbuild.",
+                value_3_title: "Continuous Improvement",
+                value_3_body: "Solutions evolve through fine-tuning based on real usage to create sustainable, cumulative impact.",
+                services_title: "Our Services",
+                services_subtitle: "We design, implement, and support solutions integrated with the real business.",
+                services_1_title: "Automations",
+                services_1_body: "We boost operational efficiency through intelligent automation. AI works as the invisible engine behind simple, clear flows.",
+                services_1_list_1_title: "Operations",
+                services_1_list_1_item_1: "• Order review",
+                services_1_list_1_item_2: "• Automated reports",
+                services_1_list_1_item_3: "• Email classification",
+                services_1_list_2_title: "Management",
+                services_1_list_2_item_1: "• Ticket management",
+                services_1_list_2_item_2: "• Flow redesign",
+                services_1_list_2_item_3: "• Error reduction",
+                services_2_title: "AI Agents",
+                services_2_body: "Internal experts 24/7 who execute tasks via natural language and operate at a fraction of the cost of a human employee.",
+                services_2_list_1_title: "Intelligence",
+                services_2_list_1_item_1: "• Autonomous execution",
+                services_2_list_1_item_2: "• Predictive analysis",
+                services_2_list_1_item_3: "• Rapid decisions",
+                services_2_list_2_title: "Scalability",
+                services_2_list_2_item_1: "• Operate across teams",
+                services_2_list_2_item_2: "• Eliminate silos",
+                services_2_list_2_item_3: "• Systems integration",
+                services_3_title: "Application Development",
+                services_3_body: "Apps that structure processes and centralize AI interaction. They organize operations, automate decisions, and connect teams.",
+                services_4_title: "Training and Adoption",
+                services_4_body: "Support organizational change management and usage habits to ensure technology delivers real impact and lasting value.",
+                methodology_title: "Our Methodology",
+                methodology_1_title: "Define the business case",
+                methodology_1_body: "Identify the root operational problem and validate that the solution is necessary.",
+                methodology_2_title: "Set measurable goals",
+                methodology_2_body: "What isn't measured can't be improved. We define clear KPIs and success metrics before implementation, ensuring every automation has a transparent purpose.",
+                methodology_3_title: "Optimize results",
+                methodology_3_body: "We run a pilot to gather real data. Monitor performance and make constant adjustments; small improvements at this stage create significant cumulative impact over time.",
+                methodology_4_title: "Scale",
+                methodology_4_body: "We act as your long-term partner, ensuring AI governance is responsible, secure, and scalable for your sustainable growth.",
+                methodology_quote: "\"Once real operational problems are identified we build the simplest solution to solve them — <span class=\"text-sky-400 font-bold uppercase tracking-widest text-lg\">fast, impactful, and continuously improving.</span>\"",
+                footer_title: "Strategic partner for<br/>AI adoption.",
+                footer_cta: "Contact",
+                footer_copy: "© 2026 Kairos Lab. Solutions with Real Impact.",
+                footer_linkedin_aria: "LinkedIn"
+            }
+        };
+
+        const setLanguage = (lang) => {
+            const strings = translations[lang] || translations.es;
+            document.title = strings.title;
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (strings[key]) {
+                    el.textContent = strings[key];
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+                const key = el.getAttribute("data-i18n-html");
+                if (strings[key]) {
+                    el.innerHTML = strings[key];
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+                const key = el.getAttribute("data-i18n-aria");
+                if (strings[key]) {
+                    el.setAttribute("aria-label", strings[key]);
+                }
+            });
+
+            document.querySelectorAll("[data-lang]").forEach((button) => {
+                const active = button.getAttribute("data-lang") === lang;
+                button.classList.toggle("bg-white/10", active);
+                button.classList.toggle("text-sky-400", active);
+            });
+        };
+
+        const storedLang = localStorage.getItem("lang") || "es";
+        setLanguage(storedLang);
+
+        document.querySelectorAll("[data-lang]").forEach((button) => {
+            button.addEventListener("click", () => {
+                const lang = button.getAttribute("data-lang");
+                localStorage.setItem("lang", lang);
+                setLanguage(lang);
+            });
+        });
+
         lucide.createIcons();
     </script>
 </body>
