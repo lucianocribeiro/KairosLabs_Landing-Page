@@ -72,7 +72,7 @@
                     <a href="#nosotros" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Nosotros</a>
                     <a href="#servicios" class="hover:text-sky-400 transition-colors" data-i18n="nav_services">Servicios</a>
                     <a href="#metodologia" class="hover:text-sky-400 transition-colors" data-i18n="nav_methodology">Metodología</a>
-                    <a href="https://lucianocribeiro.app.n8n.cloud/form/33b1eac2-b581-4f40-8a59-20cd4c0770b5" target="_blank" rel="noopener" class="hover:text-sky-400 transition-colors" data-i18n="nav_contact">Contacto</a>
+                    <a href="#contacto" class="hover:text-sky-400 transition-colors" data-i18n="nav_contact">Contacto</a>
                 </div>
                 <div class="hidden md:flex items-center ml-8">
                     <div class="inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1 text-[10px] uppercase tracking-[0.2em] font-semibold">
@@ -249,13 +249,30 @@
         </div>
     </section>
 
-    <footer class="py-24 border-t border-white/5 bg-[#050505]">
+    <footer id="contacto" class="py-24 border-t border-white/5 bg-[#050505]">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 tracking-tight" data-i18n-html="footer_title">Socio estratégico para la<br/>adopción de IA.</h2>
-            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-20">
-                <a href="https://lucianocribeiro.app.n8n.cloud/form/33b1eac2-b581-4f40-8a59-20cd4c0770b5" target="_blank" rel="noopener" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black hover:bg-sky-400 transition-all text-xs uppercase tracking-widest" data-i18n="footer_cta">
-                    Contacto
-                </a>
+            <div class="max-w-2xl mx-auto mb-20 text-left">
+                <form id="contact-form" data-webhook-url="https://lucianocribeiro.app.n8n.cloud/webhook/6d8cc850-c21d-454c-ba32-cbf29dad5698" class="bg-gradient-to-br from-white/5 to-transparent border border-white/10 rounded-[32px] p-8 md:p-10 space-y-6">
+                    <div>
+                        <label for="contact-name" class="block text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-300 mb-3" data-i18n="footer_form_name">Nombre</label>
+                        <input id="contact-name" name="name" type="text" required class="w-full bg-black/40 border border-white/15 rounded-2xl px-5 py-4 text-white placeholder:text-gray-500 focus:border-sky-400/70 focus:outline-none focus:ring-2 focus:ring-sky-400/20 transition-all" data-i18n-placeholder="footer_form_name_placeholder" placeholder="Tu nombre" />
+                    </div>
+                    <div>
+                        <label for="contact-email" class="block text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-300 mb-3" data-i18n="footer_form_email">Email</label>
+                        <input id="contact-email" name="email" type="email" required class="w-full bg-black/40 border border-white/15 rounded-2xl px-5 py-4 text-white placeholder:text-gray-500 focus:border-sky-400/70 focus:outline-none focus:ring-2 focus:ring-sky-400/20 transition-all" data-i18n-placeholder="footer_form_email_placeholder" placeholder="tu@email.com" />
+                    </div>
+                    <div>
+                        <label for="contact-message" class="block text-[11px] uppercase tracking-[0.2em] font-semibold text-gray-300 mb-3" data-i18n="footer_form_message">Mensaje</label>
+                        <textarea id="contact-message" name="message" rows="5" required class="w-full bg-black/40 border border-white/15 rounded-2xl px-5 py-4 text-white placeholder:text-gray-500 focus:border-sky-400/70 focus:outline-none focus:ring-2 focus:ring-sky-400/20 transition-all resize-y" data-i18n-placeholder="footer_form_message_placeholder" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <button id="contact-submit" type="submit" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black hover:bg-sky-400 transition-all text-xs uppercase tracking-widest disabled:opacity-60 disabled:cursor-not-allowed" data-i18n="footer_form_submit">
+                            Enviar
+                        </button>
+                        <p id="contact-status" class="text-xs tracking-wide text-gray-400 min-h-5" aria-live="polite"></p>
+                    </div>
+                </form>
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-white/5 gap-8 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-600">
                 <img src="Public/Logo.png" alt="Kairos Lab" class="h-11 opacity-40 logo-clean" />
@@ -327,7 +344,17 @@
                 methodology_4_body: "Actuamos como tu socio a largo plazo, asegurando que el gobierno de la IA sea responsable, seguro y escalable para tu crecimiento sostenible.",
                 methodology_quote: "\"Identificamos problemas operativos reales y construimos la solución más simple para resolverlos — <span class=\"text-sky-400 font-bold uppercase tracking-widest text-lg\">rápido, con impacto y mejora continua.</span>\"",
                 footer_title: "Socio estratégico para la<br/>adopción de IA.",
-                footer_cta: "Contacto",
+                footer_form_name: "Nombre",
+                footer_form_name_placeholder: "Tu nombre",
+                footer_form_email: "Email",
+                footer_form_email_placeholder: "tu@email.com",
+                footer_form_message: "Mensaje",
+                footer_form_message_placeholder: "Cuéntanos cómo podemos ayudarte",
+                footer_form_submit: "Enviar",
+                footer_form_submitting: "Enviando...",
+                footer_form_success: "Mensaje enviado correctamente.",
+                footer_form_error: "No se pudo enviar. Intenta nuevamente.",
+                footer_form_missing_webhook: "Falta configurar la URL del webhook.",
                 footer_copy: "© 2026 Kairos Labs. Soluciones con Impacto Real.",
                 footer_linkedin_aria: "LinkedIn"
             },
@@ -389,7 +416,17 @@
                 methodology_4_body: "We act as your long-term partner, ensuring AI governance is responsible, secure, and scalable for your sustainable growth.",
                 methodology_quote: "\"Once real operational problems are identified we build the simplest solution to solve them — <span class=\"text-sky-400 font-bold uppercase tracking-widest text-lg\">fast, impactful, and continuously improving.</span>\"",
                 footer_title: "Strategic partner for<br/>AI adoption.",
-                footer_cta: "Contact",
+                footer_form_name: "Name",
+                footer_form_name_placeholder: "Your name",
+                footer_form_email: "Email",
+                footer_form_email_placeholder: "you@email.com",
+                footer_form_message: "Message",
+                footer_form_message_placeholder: "Tell us how we can help",
+                footer_form_submit: "Send",
+                footer_form_submitting: "Sending...",
+                footer_form_success: "Message sent successfully.",
+                footer_form_error: "We could not send your message. Please try again.",
+                footer_form_missing_webhook: "Webhook URL is not configured yet.",
                 footer_copy: "© 2026 Kairos Labs. Solutions with Real Impact.",
                 footer_linkedin_aria: "LinkedIn"
             }
@@ -421,6 +458,13 @@
                 }
             });
 
+            document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+                const key = el.getAttribute("data-i18n-placeholder");
+                if (strings[key]) {
+                    el.setAttribute("placeholder", strings[key]);
+                }
+            });
+
             document.querySelectorAll("[data-lang]").forEach((button) => {
                 const active = button.getAttribute("data-lang") === lang;
                 button.classList.toggle("bg-white/10", active);
@@ -437,6 +481,64 @@
                 localStorage.setItem("lang", lang);
                 setLanguage(lang);
             });
+        });
+
+        const contactForm = document.getElementById("contact-form");
+        const contactSubmitButton = document.getElementById("contact-submit");
+        const contactStatus = document.getElementById("contact-status");
+        const CONTACT_WEBHOOK_URL =
+            contactForm?.dataset.webhookUrl ||
+            window.KAIROS_CONTACT_WEBHOOK_URL ||
+            "";
+
+        contactForm?.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const lang = localStorage.getItem("lang") || "es";
+            const strings = translations[lang] || translations.es;
+
+            if (!CONTACT_WEBHOOK_URL) {
+                contactStatus.textContent = strings.footer_form_missing_webhook;
+                contactStatus.classList.remove("text-sky-400");
+                contactStatus.classList.add("text-red-400");
+                return;
+            }
+
+            const formData = new FormData(contactForm);
+            const payload = {
+                Nombre: formData.get("name"),
+                Email: formData.get("email"),
+                Mensaje: formData.get("message")
+            };
+
+            contactSubmitButton.disabled = true;
+            contactStatus.textContent = strings.footer_form_submitting;
+            contactStatus.classList.remove("text-red-400");
+            contactStatus.classList.add("text-sky-400");
+
+            try {
+                const response = await fetch(CONTACT_WEBHOOK_URL, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error("Webhook request failed");
+                }
+
+                contactForm.reset();
+                contactStatus.textContent = strings.footer_form_success;
+            } catch (error) {
+                console.error(error);
+                contactStatus.textContent = strings.footer_form_error;
+                contactStatus.classList.remove("text-sky-400");
+                contactStatus.classList.add("text-red-400");
+            } finally {
+                contactSubmitButton.disabled = false;
+            }
         });
 
         lucide.createIcons();
