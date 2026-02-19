@@ -491,6 +491,36 @@
             window.KAIROS_CONTACT_WEBHOOK_URL ||
             "";
 
+        const postViaHiddenForm = (url, payload) => {
+            const iframeName = `webhook-target-${Date.now()}`;
+            const iframe = document.createElement("iframe");
+            iframe.name = iframeName;
+            iframe.style.display = "none";
+            document.body.appendChild(iframe);
+
+            const form = document.createElement("form");
+            form.method = "POST";
+            form.action = url;
+            form.target = iframeName;
+            form.style.display = "none";
+
+            Object.entries(payload).forEach(([key, value]) => {
+                const input = document.createElement("input");
+                input.type = "hidden";
+                input.name = key;
+                input.value = value ?? "";
+                form.appendChild(input);
+            });
+
+            document.body.appendChild(form);
+            form.submit();
+
+            setTimeout(() => {
+                form.remove();
+                iframe.remove();
+            }, 3000);
+        };
+
         contactForm?.addEventListener("submit", async (event) => {
             event.preventDefault();
 
@@ -548,11 +578,20 @@
                     contactStatus.classList.remove("text-red-400");
                     contactStatus.classList.add("text-sky-400");
                 } catch (fallbackError) {
-                    console.error(error);
-                    console.error(fallbackError);
-                    contactStatus.textContent = strings.footer_form_error;
-                    contactStatus.classList.remove("text-sky-400");
-                    contactStatus.classList.add("text-red-400");
+                    try {
+                        postViaHiddenForm(CONTACT_WEBHOOK_URL, payload);
+                        contactForm.reset();
+                        contactStatus.textContent = strings.footer_form_success;
+                        contactStatus.classList.remove("text-red-400");
+                        contactStatus.classList.add("text-sky-400");
+                    } catch (formError) {
+                        console.error(error);
+                        console.error(fallbackError);
+                        console.error(formError);
+                        contactStatus.textContent = strings.footer_form_error;
+                        contactStatus.classList.remove("text-sky-400");
+                        contactStatus.classList.add("text-red-400");
+                    }
                 }
             } finally {
                 contactSubmitButton.disabled = false;
