@@ -549,7 +549,15 @@
             document.querySelectorAll("[data-i18n]").forEach((el) => {
                 const key = el.getAttribute("data-i18n");
                 if (strings[key]) {
-                    el.textContent = strings[key];
+                    const nextText = strings[key];
+                    const card = el.closest(".card-hover, .type-card");
+                    if (card && card.dataset.typed !== "true") {
+                        el.dataset.typewriterSource = nextText;
+                        el.textContent = "";
+                    } else {
+                        delete el.dataset.typewriterSource;
+                        el.textContent = nextText;
+                    }
                 }
             });
 
@@ -633,7 +641,7 @@
         const typeText = (element, speed = 16) => {
             if (!element || typedElements.has(element)) return Promise.resolve();
 
-            const sourceText = element.textContent || "";
+            const sourceText = element.dataset.typewriterSource || element.textContent || "";
             if (!sourceText.trim()) {
                 typedElements.add(element);
                 return Promise.resolve();
@@ -651,6 +659,7 @@
                     if (index < sourceText.length) {
                         window.setTimeout(tick, speed);
                     } else {
+                        delete element.dataset.typewriterSource;
                         element.classList.remove("is-typing");
                         resolve();
                     }
