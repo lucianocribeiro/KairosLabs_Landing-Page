@@ -42,7 +42,6 @@
         ::-webkit-scrollbar-thumb:hover { background: #0de8e1; }
         html { scroll-behavior: smooth; }
         .glass { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(16px); }
-        .logo-clean { mix-blend-mode: screen; }
 
         .mobile-menu-overlay {
             background: rgba(5, 5, 5, 0.78);
@@ -139,7 +138,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-between h-24 items-center">
                 <div class="flex-shrink-0 z-50">
-                    <img src="Public/Logo.png" alt="Agencia Kairos" class="h-14 w-auto block logo-clean" />
+                    <img src="Public/Logo.png" alt="Agencia Kairos" class="w-auto block bg-transparent" style="height: 5.25rem;" />
                 </div>
 
                 <div class="md:hidden flex items-center ml-auto gap-4 z-50">
@@ -384,7 +383,7 @@
                 </form>
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-white/5 gap-8 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-600 reveal" style="transition-delay: 400ms;">
-                <img src="Public/Logo.png" alt="Agencia Kairos" class="h-11 opacity-40 logo-clean" />
+                <img src="Public/Logo.png" alt="Agencia Kairos" class="w-auto opacity-40 bg-transparent" style="height: 4.125rem;" />
                 <p data-i18n="footer_copy">&copy; 2026 Agencia Kairos. Soluciones con Impacto Real.</p>
                 <a href="https://www.linkedin.com/company/agkairos-labs/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" data-i18n-aria="footer_linkedin_aria" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/10 text-gray-400 hover:text-white hover:border-white/30 transition-all">
                     <i data-lucide="linkedin" class="w-[1.2rem] h-[1.2rem]"></i>
