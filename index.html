@@ -197,6 +197,12 @@
             color: rgba(13, 232, 225, 0.9);
             animation: caretBlink 0.9s steps(1, end) infinite;
         }
+        .line-clamp-4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
         @keyframes caretBlink {
             0%, 49% { opacity: 1; }
             50%, 100% { opacity: 0; }
@@ -229,9 +235,9 @@
                 
                 <div class="hidden md:flex space-x-10 text-[12px] uppercase tracking-[0.2em] font-medium ml-auto">
                     <a href="#inicio" class="text-white hover:text-sky-400 transition-colors" data-i18n="nav_home">Inicio</a>
-                    <a href="#nosotros" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Nosotros</a>
                     <a href="#servicios" class="hover:text-sky-400 transition-colors" data-i18n="nav_services">Servicios</a>
                     <a href="#metodologia" class="hover:text-sky-400 transition-colors" data-i18n="nav_methodology">Metodología</a>
+                    <a href="#nosotros" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Nosotros</a>
                     <a href="#contacto" class="hover:text-sky-400 transition-colors" data-i18n="nav_contact">Contacto</a>
                 </div>
                 <div class="hidden md:flex items-center ml-8">
@@ -248,9 +254,9 @@
     <div id="mobile-menu" class="mobile-menu-overlay fixed inset-0 z-40 transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col pt-32 px-6 md:hidden">
         <div class="flex flex-col space-y-8 text-center text-xl uppercase tracking-[0.2em] font-medium">
             <a href="#inicio" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_home">Inicio</a>
-            <a href="#nosotros" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_about">Nosotros</a>
             <a href="#servicios" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_services">Servicios</a>
             <a href="#metodologia" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_methodology">Metodología</a>
+            <a href="#nosotros" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_about">Nosotros</a>
             <a href="#contacto" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_contact">Contacto</a>
         </div>
     </div>
@@ -277,42 +283,6 @@
                 <a href="#nosotros" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest hero-step hero-step-5" data-i18n="hero_cta_about">
                     Quiénes Somos
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="nosotros" class="py-32">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-8 items-stretch">
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col reveal type-card">
-                    <h2 class="text-4xl font-bold text-white mb-8 tracking-tight" data-i18n="about_title">IA con Impacto Real y Sostenible.</h2>
-                    <p class="text-lg text-gray-400 leading-relaxed font-light mb-10" data-i18n="about_body">
-                        Combinamos conocimiento de dominio en Administración, Finanzas y Recursos Humanos con experiencia en Inteligencia Artificial y gestión del cambio. Primero entendemos el proceso, la operación y el objetivo del negocio. Luego definimos la mejor ruta entre adopción de IA, automatización, agentes o desarrollo de software. No vendemos herramientas aisladas. Diseñamos transformaciones que puedan ser adoptadas, implementadas y sostenidas.
-                    </p>
-                    <p class="mt-auto italic text-lg font-medium text-left text-sky-400" data-i18n="about_quote">"Entender el proceso correcto es el primer paso para implementar la solución correcta".</p>
-                </div>
-
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col reveal type-card" style="transition-delay: 200ms;">
-                    <h3 class="text-2xl font-bold text-white mb-10" data-i18n="value_title">Cómo Generamos Valor</h3>
-                    <div class="space-y-10 text-left text-gray-400">
-                        <div class="group">
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3 group-hover:text-sky-300 transition-colors" data-i18n="value_1_title">Diagnóstico con visión de negocio</h4>
-                            <p class="text-base font-light leading-relaxed" data-i18n="value_1_body">Mapeamos procesos, fricciones, decisiones y oportunidades con base en la realidad operativa del negocio.</p>
-                        </div>
-                        <div class="group">
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3 group-hover:text-sky-300 transition-colors" data-i18n="value_2_title">Estrategia de adopción de IA</h4>
-                            <p class="text-base font-light leading-relaxed" data-i18n="value_2_body">Definimos dónde debe entrar la IA, con qué herramientas, en qué flujos y con qué criterios de éxito.</p>
-                        </div>
-                        <div class="group">
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3 group-hover:text-sky-300 transition-colors" data-i18n="value_3_title">Gestión del cambio y capacitación</h4>
-                            <p class="text-base font-light leading-relaxed" data-i18n="value_3_body">Preparamos equipos, líderes y rutinas para incorporar la IA con claridad, confianza y gobernanza.</p>
-                        </div>
-                        <div class="group">
-                            <h4 class="text-sky-400 font-bold text-sm uppercase tracking-wider mb-3 group-hover:text-sky-300 transition-colors" data-i18n="value_4_title">Implementación y evolución continua</h4>
-                            <p class="text-base font-light leading-relaxed" data-i18n="value_4_body">Desarrollamos automatizaciones, agentes o software cuando hace falta, con seguimiento, estabilidad y mejora continua.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -400,6 +370,32 @@
         </div>
     </section>
 
+    <section id="nosotros" class="py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <article class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col reveal">
+                    <img src="Public/luciano.jpg" alt="Luciano Ribeiro" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-2 border-sky-500/50" />
+                    <h3 class="text-3xl font-bold text-white text-center mb-2">Luciano Ribeiro</h3>
+                    <p class="text-sm uppercase tracking-[0.24em] text-sky-400 text-center mb-8" data-i18n="founder_title">Cofundador</p>
+                    <div id="bio-luciano" class="text-base text-gray-300 leading-relaxed font-light line-clamp-4" data-i18n-html="bio_luciano">
+                        Con más de 16 años de experiencia internacional, Luciano ayuda a las organizaciones a transitar la intersección entre inteligencia artificial, tecnología de Recursos Humanos y transformación de negocios.
+                    </div>
+                    <button type="button" class="mt-6 text-sm font-medium text-sky-400 hover:text-sky-300 transition-colors self-start" data-read-toggle data-target="bio-luciano" aria-expanded="false" data-expanded="false">Leer más</button>
+                </article>
+
+                <article class="bg-gradient-to-br from-white/5 to-transparent p-12 rounded-[40px] border border-white/10 flex flex-col reveal" style="transition-delay: 200ms;">
+                    <img src="Public/santiago.jpg" alt="Santiago Konstantinovsky" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-2 border-sky-500/50" />
+                    <h3 class="text-3xl font-bold text-white text-center mb-2">Santiago Konstantinovsky</h3>
+                    <p class="text-sm uppercase tracking-[0.24em] text-sky-400 text-center mb-8" data-i18n="founder_title">Cofundador</p>
+                    <div id="bio-santiago" class="text-base text-gray-300 leading-relaxed font-light line-clamp-4" data-i18n-html="bio_santiago">
+                        Con más de 20 años de experiencia en el sector privado y público, Santiago ayuda a las organizaciones a conectar estrategia financiera, diseño operativo y transformación impulsada por inteligencia artificial.
+                    </div>
+                    <button type="button" class="mt-6 text-sm font-medium text-sky-400 hover:text-sky-300 transition-colors self-start" data-read-toggle data-target="bio-santiago" aria-expanded="false" data-expanded="false">Leer más</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <footer id="contacto" class="py-24 border-t border-white/5 bg-[#050505] relative overflow-hidden">
         <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
             <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 tracking-tight reveal" data-i18n-html="footer_title">Socio estratégico para la<br/>transformación y adopción de IA.</h2>
@@ -448,18 +444,11 @@
                 hero_subtitle: "Combinamos consultoría de negocio, adopción de IA, gestión del cambio e implementación para transformar procesos con impacto real.",
                 hero_cta_services: "Hablemos",
                 hero_cta_about: "Quiénes Somos",
-                about_title: "IA con Impacto Real y Sostenible.",
-                about_body: "Combinamos conocimiento de dominio en Administración, Finanzas y Recursos Humanos con experiencia en Inteligencia Artificial y gestión del cambio. Primero entendemos el proceso, la operación y el objetivo del negocio. Luego definimos la mejor ruta entre adopción de IA, automatización, agentes o desarrollo de software. No vendemos herramientas aisladas. Diseñamos transformaciones que puedan ser adoptadas, implementadas y sostenidas.",
-                about_quote: "\"Entender el proceso correcto es el primer paso para implementar la solución correcta\".",
-                value_title: "Cómo Generamos Valor",
-                value_1_title: "Diagnóstico con visión de negocio",
-                value_1_body: "Mapeamos procesos, fricciones, decisiones y oportunidades con base en la realidad operativa del negocio.",
-                value_2_title: "Estrategia de adopción de IA",
-                value_2_body: "Definimos dónde debe entrar la IA, con qué herramientas, en qué flujos y con qué criterios de éxito.",
-                value_3_title: "Gestión del cambio y capacitación",
-                value_3_body: "Preparamos equipos, líderes y rutinas para incorporar la IA con claridad, confianza y gobernanza.",
-                value_4_title: "Implementación y evolución continua",
-                value_4_body: "Desarrollamos automatizaciones, agentes o software cuando hace falta, con seguimiento, estabilidad y mejora continua.",
+                founder_title: "Cofundador",
+                read_more: "Leer más",
+                read_less: "Ver menos",
+                bio_luciano: "Con más de 16 años de experiencia internacional, Luciano ayuda a las organizaciones a transitar la intersección entre inteligencia artificial, tecnología de Recursos Humanos y transformación de negocios.<br><br>Su carrera comenzó en el mundo corporativo, liderando implementaciones de HRIS a gran escala y rediseños de procesos en plataformas como Workday, Oracle, SAP, ADP y sistemas de gestión de casos. Trabajó con clientes Fortune 500 como Disney, Sony, 21st Century Fox, Mosaic, Ashland, Valvoline y Lenovo, ejecutando proyectos en las Américas, EMEA y APAC, tanto de forma remota como presencial.<br><br>Hoy, canaliza esa profundidad operativa hacia la inteligencia artificial. Como Cofundador de Agencia Kairos, Luciano se especializa en arquitectura de automatización con IA, desarrollo de aplicaciones impulsadas por IA y acompañamiento estructurado en procesos de adopción de IA. Su trabajo se ubica en el cruce entre estrategia de negocio e IA aplicada: comprender cómo opera realmente una organización, identificar dónde la automatización inteligente genera impacto medible y diseñar soluciones que se adapten al negocio en lugar de forzar al negocio a adaptarse a la tecnología. Su enfoque parte de una convicción simple: la IA genera valor real solo cuando se construye sobre procesos sólidos, conocimiento profundo del dominio y una comprensión clara del problema que necesita resolver.",
+                bio_santiago: "Con más de 20 años de experiencia en el sector privado y público, Santiago ayuda a las organizaciones a conectar estrategia financiera, diseño operativo y transformación impulsada por inteligencia artificial.<br><br>Es Licenciado en Economía por la Universidad de Buenos Aires (UBA) y Magíster en Finanzas por la Universidad Torcuato Di Tella (UTDT). Su carrera comenzó en finanzas corporativas, donde construyó una base sólida en administración, contabilidad y gestión financiera. En Global Blue, empresa líder mundial en servicios vinculados al turismo, evolucionó de Controller Financiero a Gerente de Administración, Finanzas y Operaciones para la región LATAM. Como consultor independiente, asesoró a empresas de los sectores textil, tecnológico, vitivinícola, industrial y comercial en modelado financiero, diseño de procesos, gestión del cambio y liderazgo de startups.<br><br>En el sector público, Santiago se desempeñó como Subsecretario de Presupuesto y Finanzas de la Municipalidad de Salta, Coordinador Regional Centro en el Ministerio del Interior y Consultor en la Iniciativa de Ciudades Emergentes y Sostenibles del Banco Interamericano de Desarrollo (BID). Estas experiencias le permitieron desarrollar una comprensión sólida de la gestión institucional, la planificación presupuestaria y la articulación entre política pública y ejecución en el territorio.<br><br>Esa acumulación de experiencia práctica gestionando organizaciones reales fue lo que lo llevó a explorar la IA como herramienta de transformación operativa, cofundando Agencia Kairos. Su trabajo se ubica en el cruce entre estrategia de negocio e IA aplicada: comprender cómo opera realmente una organización, identificar dónde la automatización inteligente genera impacto medible y diseñar soluciones que se adapten al negocio en lugar de forzar al negocio a adaptarse a la tecnología. Su convicción es clara: la IA genera valor real solo cuando se construye sobre procesos sólidos, conocimiento profundo del dominio y una comprensión clara del problema que necesita resolver.<br><br>El propósito de Santiago es diseñar soluciones estratégicas que combinen conocimiento de dominio e inteligencia artificial para impulsar el crecimiento sostenible y la eficiencia operativa de las organizaciones con las que colabora.",
                 services_title: "Nuestros Servicios",
                 services_subtitle: "Combinamos consultoría especializada, tecnología, gestión del cambio y capacitación para transformar procesos con impacto real.",
                 services_1_title: "Consultoría Especializada",
@@ -506,18 +495,11 @@
                 hero_subtitle: "We combine business consulting, AI adoption, change management, and implementation to transform processes with real impact.",
                 hero_cta_services: "Let's talk",
                 hero_cta_about: "Who We Are",
-                about_title: "AI with Real, Sustainable Impact.",
-                about_body: "We combine domain knowledge in Administration, Finance, and Human Resources with expertise in Artificial Intelligence and change management. First we understand the process, the operation, and the business objective. Then we define the right path across AI adoption, automation, agents, or software development. We do not sell isolated tools. We design transformations that can be adopted, implemented, and sustained.",
-                about_quote: "\"Understanding the right process is the first step to implementing the right solution.\"",
-                value_title: "How We Create Value",
-                value_1_title: "Business-led diagnosis",
-                value_1_body: "We map processes, frictions, decisions, and opportunities based on the real operating context of the business.",
-                value_2_title: "AI adoption strategy",
-                value_2_body: "We define where AI should enter, which tools to use, which workflows to impact, and how success will be measured.",
-                value_3_title: "Change management and enablement",
-                value_3_body: "We prepare teams, leaders, and routines to incorporate AI with clarity, confidence, and governance.",
-                value_4_title: "Implementation and continuous evolution",
-                value_4_body: "We build automations, agents, or software when needed, with follow-up, stability, and continuous improvement.",
+                founder_title: "Co-Founder",
+                read_more: "Read more",
+                read_less: "Read less",
+                bio_luciano: "With over 16 years of international experience, Luciano helps organizations navigate the intersection of AI, Human Resources technology, and business transformation.<br><br>His career started on the enterprise side, leading large-scale HRIS implementations and process redesigns across Workday, Oracle, SAP, ADP, and case management platforms. He has served Fortune 500 clients including Disney, Sony, 21st Century Fox, Mosaic, Ashland, Valvoline, and Lenovo, delivering projects across the Americas, EMEA, and APAC in both remote and on-site environments.<br><br>Today, he channels that operational depth into AI. As Co-Founder of Agencia Kairos, Luciano focuses on AI automation architecture, AI-powered application development, and guiding companies through structured AI adoption. His work sits at the crossroads of business strategy and applied AI: understanding how an organization actually operates, identifying where intelligent automation creates measurable impact, and designing solutions that fit the business rather than forcing the business to fit the technology. His approach is grounded in a simple conviction: AI delivers real value only when it's built on solid processes, deep domain knowledge, and a clear understanding of the problem it needs to solve.",
+                bio_santiago: "With over 20 years of experience across the private and public sectors, Santiago helps organizations bridge the gap between financial strategy, operational design, and AI-driven transformation.<br><br>He holds a degree in Economics from the Universidad de Buenos Aires (UBA) and a Master's in Finance from the Universidad Torcuato Di Tella (UTDT). His career began in corporate finance, where he built a deep foundation in administration, accounting, and financial management. At Global Blue, a world leader in tourism-related services, he progressed from Financial Controller to Head of Administration, Finance, and Operations for the LATAM region. As an independent consultant, he advised companies across the textile, technology, wine, industrial, and commercial sectors on financial modeling, process design, change management, and startup leadership.<br><br>In the public sector, Santiago served as Undersecretary of Budget and Finance for the Municipality of Salta, Regional Coordinator at Argentina's Ministry of the Interior, and Consultant for the Inter-American Development Bank's Emerging and Sustainable Cities Initiative. These roles gave him a solid understanding of institutional management, budget planning, and the intersection of public policy and execution on the ground.<br><br>That accumulation of hands-on experience managing real organizations is what led him to explore AI as a tool for operational transformation, ultimately co-founding Agencia Kairos. His work sits at the crossroads of business strategy and applied AI: understanding how an organization actually operates, identifying where intelligent automation creates measurable impact, and designing solutions that fit the business rather than forcing the business to fit the technology. His conviction is clear: AI delivers real value only when it's built on solid processes, deep domain knowledge, and a clear understanding of the problem it needs to solve.<br><br>Santiago's purpose is to design strategic solutions that combine domain expertise and artificial intelligence to drive sustainable growth and operational efficiency for the organizations he works with.",
                 services_title: "Our Services",
                 services_subtitle: "We combine specialized consulting, technology, change management, and training to transform processes with real impact.",
                 services_1_title: "Specialized Consulting",
@@ -564,18 +546,11 @@
                 hero_subtitle: "Combinamos consultoria de negócio, adoção de IA, gestão de mudanças e implementação para transformar processos com impacto real.",
                 hero_cta_services: "Vamos conversar",
                 hero_cta_about: "Quem Somos",
-                about_title: "IA com Impacto Real e Sustentável.",
-                about_body: "Combinamos conhecimento de domínio em Administração, Finanças e Recursos Humanos com experiência em Inteligência Artificial e gestão de mudanças. Primeiro entendemos o processo, a operação e o objetivo do negócio. Depois definimos a melhor rota entre adoção de IA, automação, agentes ou desenvolvimento de software. Não vendemos ferramentas isoladas. Desenhamos transformações que possam ser adotadas, implementadas e sustentadas.",
-                about_quote: "\"Entender o processo correto é o primeiro passo para implementar a solução correta.\"",
-                value_title: "Como Geramos Valor",
-                value_1_title: "Diagnóstico com visão de negócio",
-                value_1_body: "Mapeamos processos, fricções, decisões e oportunidades com base na realidade operacional do negócio.",
-                value_2_title: "Estratégia de adoção de IA",
-                value_2_body: "Definimos onde a IA deve entrar, com quais ferramentas, em quais fluxos e com quais critérios de sucesso.",
-                value_3_title: "Gestão de mudanças e capacitação",
-                value_3_body: "Preparamos equipes, lideranças e rotinas para incorporar a IA com clareza, confiança e governança.",
-                value_4_title: "Implementação e evolução contínua",
-                value_4_body: "Desenvolvemos automações, agentes ou software quando necessário, com acompanhamento, estabilidade e melhoria contínua.",
+                founder_title: "Cofundador",
+                read_more: "Leia mais",
+                read_less: "Ver menos",
+                bio_luciano: "Com mais de 16 anos de experiência internacional, Luciano ajuda organizações a navegar a interseção entre inteligência artificial, tecnologia de Recursos Humanos e transformação de negócios.<br><br>Sua carreira começou no lado corporativo, liderando implementações de HRIS em larga escala e redesenhos de processos em plataformas como Workday, Oracle, SAP, ADP e sistemas de gestão de casos. Atendeu clientes Fortune 500 como Disney, Sony, 21st Century Fox, Mosaic, Ashland, Valvoline e Lenovo, entregando projetos nas Américas, EMEA e APAC, em ambientes remotos e presenciais.<br><br>Hoje, canaliza essa profundidade operacional para a inteligência artificial. Como Cofundador da Agência Kairos, Luciano atua em arquitetura de automação com IA, desenvolvimento de aplicações potencializadas por IA e condução estruturada de processos de adoção de IA. Seu trabalho se posiciona no cruzamento entre estratégia de negócio e IA aplicada: compreender como uma organização realmente opera, identificar onde a automação inteligente gera impacto mensurável e desenhar soluções que se adaptem ao negócio em vez de forçar o negócio a se adaptar à tecnologia. Sua abordagem parte de uma convicção simples: a IA só gera valor real quando construída sobre processos sólidos, conhecimento profundo do domínio e uma compreensão clara do problema que precisa resolver.",
+                bio_santiago: "Com mais de 20 anos de experiência nos setores privado e público, Santiago ajuda organizações a conectar estratégia financeira, desenho operacional e transformação impulsionada por inteligência artificial.<br><br>É formado em Economia pela Universidad de Buenos Aires (UBA) e Mestre em Finanças pela Universidad Torcuato Di Tella (UTDT). Sua carreira começou em finanças corporativas, onde construiu uma base sólida em administração, contabilidade e gestão financeira. Na Global Blue, líder mundial em serviços vinculados ao turismo, evoluiu de Controller Financeiro a Gerente de Administração, Finanças e Operações para a região LATAM. Como consultor independente, assessorou empresas dos setores têxtil, tecnológico, vitivinícola, industrial e comercial em modelagem financeira, desenho de processos, gestão de mudança e liderança de startups.<br><br>No setor público, Santiago atuou como Subsecretário de Orçamento e Finanças do Município de Salta, Coordenador Regional Centro no Ministério do Interior e Consultor na Iniciativa de Cidades Emergentes e Sustentáveis do Banco Interamericano de Desenvolvimento (BID). Essas experiências lhe permitiram desenvolver uma compreensão sólida da gestão institucional, do planejamento orçamentário e da articulação entre política pública e execução no território.<br><br>Esse acúmulo de experiência prática na gestão de organizações reais foi o que o levou a explorar a IA como ferramenta de transformação operacional, cofundando a Agência Kairos. Seu trabalho se posiciona no cruzamento entre estratégia de negócio e IA aplicada: compreender como uma organização realmente opera, identificar onde a automação inteligente gera impacto mensurável e desenhar soluções que se adaptem ao negócio em vez de forçar o negócio a se adaptar à tecnologia. Sua convicção é clara: a IA só gera valor real quando construída sobre processos sólidos, conhecimento profundo do domínio e uma compreensão clara do problema que precisa resolver.<br><br>O propósito de Santiago é desenhar soluções estratégicas que combinem conhecimento de domínio e inteligência artificial para impulsionar o crescimento sustentável e a eficiência operacional das organizações com as quais colabora.",
                 services_title: "Nossos Serviços",
                 services_subtitle: "Combinamos consultoria especializada, tecnologia, gestão de mudanças e capacitação para transformar processos com impacto real.",
                 services_1_title: "Consultoria Especializada",
@@ -654,11 +629,39 @@
                 }
             });
 
+            updateReadToggleLabels(strings);
+
             document.querySelectorAll("[data-lang]").forEach((button) => {
                 const active = button.getAttribute("data-lang") === lang;
                 button.classList.toggle("bg-white/10", active);
                 button.classList.toggle("text-sky-400", active);
             });
+        };
+
+        const updateReadToggleLabels = (strings) => {
+            document.querySelectorAll("[data-read-toggle]").forEach((button) => {
+                const expanded = button.getAttribute("aria-expanded") === "true";
+                button.textContent = expanded ? strings.read_less : strings.read_more;
+            });
+        };
+
+        const toggleBioText = (button) => {
+            const bioId = button.getAttribute("data-target");
+            if (!bioId) return;
+
+            const bioElement = document.getElementById(bioId);
+            if (!bioElement) return;
+
+            const isExpanded = button.getAttribute("aria-expanded") === "true";
+            bioElement.classList.toggle("line-clamp-4", isExpanded);
+
+            const nextExpanded = !isExpanded;
+            button.setAttribute("aria-expanded", nextExpanded ? "true" : "false");
+            button.dataset.expanded = nextExpanded ? "true" : "false";
+
+            const lang = localStorage.getItem("lang") || "es";
+            const strings = translations[lang] || translations.es;
+            button.textContent = nextExpanded ? strings.read_less : strings.read_more;
         };
 
         const storedLang = localStorage.getItem("lang") || "es";
@@ -670,6 +673,10 @@
                 localStorage.setItem("lang", lang);
                 setLanguage(lang);
             });
+        });
+
+        document.querySelectorAll("[data-read-toggle]").forEach((button) => {
+            button.addEventListener("click", () => toggleBioText(button));
         });
 
         const mobileMenuBtn = document.getElementById("mobile-menu-btn");
