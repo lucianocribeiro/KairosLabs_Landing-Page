@@ -206,13 +206,9 @@
             overflow: hidden;
         }
         .client-logo {
-            filter: grayscale(1);
-            opacity: 0.6;
-            transition: filter 0.28s ease, opacity 0.28s ease, transform 0.28s ease;
+            transition: transform 0.28s ease;
         }
         .client-logo:hover {
-            filter: grayscale(0);
-            opacity: 1;
             transform: translateY(-2px);
         }
         @keyframes caretBlink {
@@ -242,8 +238,8 @@
                 
                 <div class="hidden lg:flex space-x-6 xl:space-x-10 text-[12px] uppercase tracking-[0.2em] font-medium ml-auto">
                     <a href="#inicio" class="text-white hover:text-sky-400 transition-colors" data-i18n="nav_home">Inicio</a>
-                    <a href="#que-resolvemos" class="hover:text-sky-400 transition-colors" data-i18n="nav_services">Qué resolvemos</a>
-                    <a href="#como-trabajamos" class="hover:text-sky-400 transition-colors" data-i18n="nav_methodology">Cómo trabajamos</a>
+                    <a href="#que-resolvemos" class="hover:text-sky-400 transition-colors" data-i18n="nav_services">Soluciones</a>
+                    <a href="#como-trabajamos" class="hover:text-sky-400 transition-colors" data-i18n="nav_methodology">Método</a>
                     <a href="#socios" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Socios</a>
                     <a href="#clientes" class="hover:text-sky-400 transition-colors" data-i18n="nav_clients">Clientes</a>
                     <a href="#contacto" class="hover:text-sky-400 transition-colors" data-i18n="nav_contact">Contacto</a>
@@ -274,8 +270,8 @@
         </div>
         <div class="flex flex-col space-y-8 text-center text-xl uppercase tracking-[0.2em] font-medium">
             <a href="#inicio" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_home">Inicio</a>
-            <a href="#que-resolvemos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_services">Qué resolvemos</a>
-            <a href="#como-trabajamos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_methodology">Cómo trabajamos</a>
+            <a href="#que-resolvemos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_services">Soluciones</a>
+            <a href="#como-trabajamos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_methodology">Método</a>
             <a href="#socios" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_about">Socios</a>
             <a href="#clientes" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_clients">Clientes</a>
             <a href="#contacto" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_contact">Contacto</a>
@@ -303,25 +299,8 @@
                     Quiero el diagnóstico
                 </a>
                 <a href="#como-trabajamos" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest hero-step hero-step-5" data-i18n="hero_cta_about">
-                    Cómo trabajamos
+                    Método
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="logo-franja" class="py-12 bg-[#050505] border-y border-white/5">
-        <div class="max-w-6xl mx-auto px-6">
-            <p class="text-xs font-black text-sky-500 uppercase tracking-[0.22em] sm:tracking-[0.45em] leading-relaxed mb-8 text-center reveal" data-i18n="clients_title">Empresas que ya trabajan distinto</p>
-            <div class="flex md:justify-center gap-6 overflow-x-auto md:overflow-visible pb-2 md:pb-0 reveal" aria-label="Logos de clientes" data-i18n-aria="clients_logos_aria">
-                <div class="min-w-[10rem] h-20 flex items-center justify-center">
-                    <img src="Public/bi.png" alt="Be Influencers" loading="lazy" class="client-logo h-12 w-auto max-w-[9rem] object-contain" />
-                </div>
-                <div class="min-w-[10rem] h-20 flex items-center justify-center">
-                    <img src="Public/fb.png" alt="First Blades" loading="lazy" class="client-logo h-12 w-auto max-w-[9rem] object-contain" />
-                </div>
-                <div class="min-w-[10rem] h-20 flex items-center justify-center">
-                    <img src="Public/maia.png" alt="Maia Sedaca Arquitectura" loading="lazy" class="client-logo h-12 w-auto max-w-[9rem] object-contain" />
-                </div>
             </div>
         </div>
     </section>
@@ -329,7 +308,7 @@
     <section id="que-resolvemos" class="py-32 bg-[#080808]">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20 reveal">
-                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center whitespace-nowrap reveal" data-i18n="services_title">Qué resolvemos</h2>
+                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center whitespace-nowrap reveal" data-i18n="services_title">Soluciones</h2>
                 <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="services_subtitle">Abordamos aquello que encarece la operación de una empresa en crecimiento.</p>
             </div>
             
@@ -364,7 +343,7 @@
    <section id="como-trabajamos" class="py-32 bg-[#050505]">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20 reveal">
-                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center reveal" data-i18n="methodology_title">Cómo trabajamos</h2>
+                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center reveal" data-i18n="methodology_title">Método</h2>
                 <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="methodology_subtitle">Un proceso integral de 3 fases, cada una con algo concreto en tus manos.</p>
             </div>
             
@@ -511,15 +490,15 @@
                 og_locale: "es_AR",
                 nav_home: "Inicio",
                 nav_about: "Socios",
-                nav_services: "Qué resolvemos",
-                nav_methodology: "Cómo trabajamos",
+                nav_services: "Soluciones",
+                nav_methodology: "Método",
                 nav_clients: "Clientes",
                 nav_contact: "Contacto",
                 hero_title: "<span class=\"hero-line block hero-step hero-step-1\">Mejor operación.</span><span class=\"hero-line block hero-step hero-step-2\">Menos costos.</span><span class=\"hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3\">Más resultados.</span>",
                 hero_subtitle: "Cuando los procesos, la información y la tecnología dejan de acompañar al negocio, la operación empieza a costar más de lo que debería. Ahí entramos nosotros para revertirlo.",
                 hero_cta_services: "Quiero el diagnóstico",
-                hero_cta_about: "Cómo trabajamos",
-                services_title: "Qué resolvemos",
+                hero_cta_about: "Método",
+                services_title: "Soluciones",
                 services_subtitle: "Abordamos aquello que encarece la operación de una empresa en crecimiento.",
                 services_1_title: "Decisiones sin información",
                 services_1_body: "Cuando los números llegan tarde o no cierran, se decide por intuición. Ordenamos la información de administración y finanzas para que sepas, mes a mes, dónde ganás y dónde perdés.",
@@ -529,7 +508,7 @@
                 services_3_body: "Los procesos nuevos, sin una buena gestión del cambio, no pasan de ser un proyecto. Trabajamos junto a líderes y equipos para que la nueva forma de trabajar se sostenga después de que el proyecto termina.",
                 services_4_title: "Dependencia operativa",
                 services_4_body: "Mientras el conocimiento viva en las personas y no en la empresa, hay un techo. Documentamos procesos, capacitamos al equipo y convertimos ese conocimiento en un activo de la organización.",
-                methodology_title: "Cómo trabajamos",
+                methodology_title: "Método",
                 methodology_subtitle: "Un proceso integral de 3 fases, cada una con algo concreto en tus manos.",
                 methodology_1_title: "Fase 1 — Diagnóstico",
                 methodology_1_body: "Miramos la operación completa: procesos, información, herramientas y costos. Elaboramos un mapa de dónde se pierde tiempo y dinero, con las oportunidades ordenadas por impacto.",
@@ -575,15 +554,15 @@
                 og_locale: "en_US",
                 nav_home: "Home",
                 nav_about: "Founders",
-                nav_services: "What we solve",
-                nav_methodology: "How we work",
+                nav_services: "Solutions",
+                nav_methodology: "Method",
                 nav_clients: "Clients",
                 nav_contact: "Contact",
                 hero_title: "<span class=\"hero-line block hero-step hero-step-1\">Better operations.</span><span class=\"hero-line block hero-step hero-step-2\">Lower costs.</span><span class=\"hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3\">Stronger results.</span>",
                 hero_subtitle: "When processes, information and technology stop keeping up with the business, operations start costing more than they should. That's where we come in.",
                 hero_cta_services: "Get my diagnostic",
-                hero_cta_about: "How we work",
-                services_title: "What we solve",
+                hero_cta_about: "Method",
+                services_title: "Solutions",
                 services_subtitle: "We tackle what drives up the cost of running a growing company.",
                 services_1_title: "Decisions without information",
                 services_1_body: "When the numbers arrive late or don't add up, decisions get made on gut feel. We organize administrative and financial information so you know, month by month, where you make money and where you lose it.",
@@ -593,7 +572,7 @@
                 services_3_body: "Without proper change management, new processes never outlive the project. We work alongside leaders and teams so the new way of working holds long after the project ends.",
                 services_4_title: "Operational dependency",
                 services_4_body: "As long as knowledge lives in people rather than in the company, there's a ceiling. We document processes, train the team and turn that knowledge into an asset of the organization.",
-                methodology_title: "How we work",
+                methodology_title: "Method",
                 methodology_subtitle: "An integrated three-phase process, each one ending with something concrete in your hands.",
                 methodology_1_title: "Phase 1 — Diagnosis",
                 methodology_1_body: "We look at the entire operation: processes, information, tools and costs. We build a map of where time and money are being lost, with opportunities ranked by impact.",
@@ -639,15 +618,15 @@
                 og_locale: "pt_BR",
                 nav_home: "Início",
                 nav_about: "Sócios",
-                nav_services: "O que resolvemos",
-                nav_methodology: "Como trabalhamos",
+                nav_services: "Soluções",
+                nav_methodology: "Método",
                 nav_clients: "Clientes",
                 nav_contact: "Contato",
                 hero_title: "<span class=\"hero-line block hero-step hero-step-1\">Melhor operação.</span><span class=\"hero-line block hero-step hero-step-2\">Menos custos.</span><span class=\"hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3\">Mais resultados.</span>",
                 hero_subtitle: "Quando os processos, a informação e a tecnologia deixam de acompanhar o negócio, a operação começa a custar mais do que deveria. É aí que entramos para reverter isso.",
                 hero_cta_services: "Quero o diagnóstico",
-                hero_cta_about: "Como trabalhamos",
-                services_title: "O que resolvemos",
+                hero_cta_about: "Método",
+                services_title: "Soluções",
                 services_subtitle: "Abordamos aquilo que encarece a operação de uma empresa em crescimento.",
                 services_1_title: "Decisões sem informação",
                 services_1_body: "Quando os números chegam tarde ou não fecham, decide-se por intuição. Organizamos a informação administrativa e financeira para que você saiba, mês a mês, onde ganha e onde perde.",
@@ -657,7 +636,7 @@
                 services_3_body: "Os processos novos, sem uma boa gestão da mudança, não passam de um projeto. Trabalhamos junto a líderes e equipes para que a nova forma de trabalhar se sustente depois que o projeto termina.",
                 services_4_title: "Dependência operacional",
                 services_4_body: "Enquanto o conhecimento viver nas pessoas e não na empresa, há um teto. Documentamos processos, capacitamos a equipe e transformamos esse conhecimento em um ativo da organização.",
-                methodology_title: "Como trabalhamos",
+                methodology_title: "Método",
                 methodology_subtitle: "Um processo integral de 3 fases, cada uma com algo concreto nas suas mãos.",
                 methodology_1_title: "Fase 1 — Diagnóstico",
                 methodology_1_body: "Olhamos a operação completa: processos, informação, ferramentas e custos. Elaboramos um mapa de onde se perde tempo e dinheiro, com as oportunidades ordenadas por impacto.",
