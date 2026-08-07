@@ -211,6 +211,41 @@
         .client-logo:hover {
             transform: translateY(-2px);
         }
+        .client-logo-marquee {
+            --client-logo-gap: 2rem;
+            overflow: hidden;
+            -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+        }
+        .client-logo-track {
+            display: flex;
+            width: max-content;
+            animation: clientLogoMarquee 28s linear infinite;
+            will-change: transform;
+        }
+        .client-logo-marquee:hover .client-logo-track {
+            animation-play-state: paused;
+        }
+        .client-logo-set {
+            display: flex;
+            align-items: center;
+            gap: var(--client-logo-gap);
+            padding-right: var(--client-logo-gap);
+        }
+        @media (min-width: 768px) {
+            .client-logo-marquee {
+                --client-logo-gap: 2.5rem;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .client-logo-track {
+                animation: none;
+            }
+        }
+        @keyframes clientLogoMarquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
         @keyframes caretBlink {
             0%, 49% { opacity: 1; }
             50%, 100% { opacity: 0; }
@@ -435,24 +470,48 @@
             <div class="text-center mb-16 reveal">
                 <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.22em] sm:tracking-[0.45em] leading-relaxed mb-6 text-center reveal" data-i18n="clients_title">Empresas con las que ya estamos optimizando la operación</h2>
             </div>
-            <div class="flex md:justify-center items-center gap-8 md:gap-10 overflow-x-auto md:overflow-visible pb-2 md:pb-0 reveal" aria-label="Logos de clientes" data-i18n-aria="clients_logos_aria">
-                <div class="shrink-0 h-24 flex items-center justify-center">
-                    <img src="Public/bi.png" alt="Be Influencers" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
-                </div>
-                <div class="shrink-0 h-24 flex items-center justify-center">
-                    <img src="Public/fb.png" alt="First Blades" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
-                </div>
-                <div class="shrink-0 h-24 flex items-center justify-center">
-                    <img src="Public/maia.png" alt="Maia Sedaca Arquitectura" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
-                </div>
-                <div class="shrink-0 h-24 flex items-center justify-center">
-                    <img src="Public/solesilva-transparent.png" alt="Sole Silva" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
-                </div>
-                <div class="shrink-0 h-24 flex items-center justify-center">
-                    <img src="Public/bodegalavaque.png?v=transparent-1" alt="Bodega Lavaque" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
-                </div>
-                <div class="shrink-0 h-24 flex items-center justify-center">
-                    <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="Hotel Finca El Recreo" loading="lazy" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
+            <div class="client-logo-marquee pb-2 md:pb-0 reveal" aria-label="Logos de clientes" data-i18n-aria="clients_logos_aria">
+                <div class="client-logo-track">
+                    <div class="client-logo-set">
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/bi.png" alt="Be Influencers" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/fb.png" alt="First Blades" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/maia.png" alt="Maia Sedaca Arquitectura" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/solesilva-transparent.png" alt="Sole Silva" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/bodegalavaque.png?v=transparent-1" alt="Bodega Lavaque" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="Hotel Finca El Recreo" loading="lazy" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
+                        </div>
+                    </div>
+                    <div class="client-logo-set" aria-hidden="true">
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/bi.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/fb.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/maia.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/solesilva-transparent.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/bodegalavaque.png?v=transparent-1" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                        </div>
+                        <div class="shrink-0 h-24 flex items-center justify-center">
+                            <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="" loading="lazy" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 clients-case-grid"></div>
