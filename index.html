@@ -212,8 +212,9 @@
             transform: translateY(-2px);
         }
         .client-logo-marquee {
-            --client-logo-gap: 2rem;
-            --client-logo-duration: 16s;
+            --client-logo-gap: 1.25rem;
+            --client-logo-duration: 9s;
+            --client-logo-item-width: 8rem;
             overflow: hidden;
             -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
             mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -234,11 +235,16 @@
             align-items: center;
             gap: var(--client-logo-gap);
             padding-right: var(--client-logo-gap);
+            flex: 0 0 auto;
+        }
+        .client-logo-set > div {
+            width: var(--client-logo-item-width);
         }
         @media (min-width: 768px) {
             .client-logo-marquee {
                 --client-logo-gap: 2.5rem;
                 --client-logo-duration: 28s;
+                --client-logo-item-width: 10rem;
             }
         }
         @media (prefers-reduced-motion: reduce) {
@@ -478,48 +484,48 @@
                 <div class="client-logo-track">
                     <div class="client-logo-set">
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/bi.png" alt="Be Influencers" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/bi.png" alt="Be Influencers" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/fb.png" alt="First Blades" loading="lazy" class="client-logo h-[2.8rem] w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/fb.png" alt="First Blades" loading="eager" decoding="async" class="client-logo h-[2.8rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/maia.png" alt="Maia Sedaca Arquitectura" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/maia.png" alt="Maia Sedaca Arquitectura" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/solesilva-transparent.png" alt="Sole Silva" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/solesilva-transparent.png" alt="Sole Silva" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/bodegalavaque.png?v=transparent-1" alt="Bodega Lavaque" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/bodegalavaque.png?v=transparent-1" alt="Bodega Lavaque" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="Hotel Finca El Recreo" loading="lazy" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="Hotel Finca El Recreo" loading="eager" decoding="async" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/vl-transparent.png" alt="VLITORL Logística" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/vl-transparent.png" alt="VLITORL Logística" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                     </div>
                     <div class="client-logo-set" aria-hidden="true">
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/bi.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/bi.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/fb.png" alt="" loading="lazy" class="client-logo h-[2.8rem] w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/fb.png" alt="" loading="eager" decoding="async" class="client-logo h-[2.8rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/maia.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/maia.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/solesilva-transparent.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/solesilva-transparent.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/bodegalavaque.png?v=transparent-1" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/bodegalavaque.png?v=transparent-1" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="" loading="lazy" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="" loading="eager" decoding="async" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/vl-transparent.png" alt="" loading="lazy" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/vl-transparent.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                     </div>
                 </div>
