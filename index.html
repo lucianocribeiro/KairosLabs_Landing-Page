@@ -19,20 +19,20 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia Kairos | Consultoría en procesos, finanzas y tecnología para PyMEs</title>
-    <meta name="description" content="Ayudamos a empresas a bajar el costo de su operación y mejorar sus resultados, trabajando sobre procesos, información y tecnología. Diagnóstico inicial sin costo.">
+    <title>Agencia Kairos | Procesos, finanzas y tecnología para PyMEs</title>
+    <meta name="description" content="Ordenamos la administración, las finanzas, la logística, los equipos y el marketing de tu empresa para que opere mejor y cueste menos. Diagnóstico inicial sin costo.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.agenciakairos.net/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_AR">
     <meta property="og:site_name" content="Agencia Kairos">
-    <meta property="og:title" content="Agencia Kairos | Consultoría en procesos, finanzas y tecnología para PyMEs">
-    <meta property="og:description" content="Ayudamos a empresas a bajar el costo de su operación y mejorar sus resultados, trabajando sobre procesos, información y tecnología. Diagnóstico inicial sin costo.">
+    <meta property="og:title" content="Agencia Kairos | Procesos, finanzas y tecnología para PyMEs">
+    <meta property="og:description" content="Ordenamos la administración, las finanzas, la logística, los equipos y el marketing de tu empresa para que opere mejor y cueste menos. Diagnóstico inicial sin costo.">
     <meta property="og:url" content="https://www.agenciakairos.net/">
     <meta property="og:image" content="https://www.agenciakairos.net/Public/Logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Agencia Kairos | Consultoría en procesos, finanzas y tecnología para PyMEs">
-    <meta name="twitter:description" content="Ayudamos a empresas a bajar el costo de su operación y mejorar sus resultados, trabajando sobre procesos, información y tecnología. Diagnóstico inicial sin costo.">
+    <meta name="twitter:title" content="Agencia Kairos | Procesos, finanzas y tecnología para PyMEs">
+    <meta name="twitter:description" content="Ordenamos la administración, las finanzas, la logística, los equipos y el marketing de tu empresa para que opere mejor y cueste menos. Diagnóstico inicial sin costo.">
     <meta name="twitter:image" content="https://www.agenciakairos.net/Public/Logo.png">
     <link rel="icon" type="image/png" href="Public/favicon.png">
     <script type="application/ld+json">
@@ -41,21 +41,20 @@
             "@type": "ProfessionalService",
             "name": "Agencia Kairos",
             "url": "https://www.agenciakairos.net/",
-            "description": "Consultoría en procesos, finanzas y tecnología para empresas en crecimiento.",
+            "description": "Procesos, finanzas y tecnología para PyMEs: administración y finanzas, logística, recursos humanos y marketing.",
             "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "Argentina"
             },
             "serviceType": [
-                "Operational Process Consulting",
-                "Administrative and Financial Diagnosis",
-                "Business Process Automation",
-                "Custom Software Development",
-                "Change Management"
+                "Administration and Finance Consulting",
+                "Logistics Platforms and Process Consulting",
+                "Human Resources Process Consulting",
+                "Marketing Strategy and Digital Presence",
+                "Business Process Automation"
             ]
         }
     </script>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -77,192 +76,9 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <style>
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #0de8e1; }
-        html { scroll-behavior: smooth; }
-        .glass { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(16px); }
-
-        .mobile-menu-overlay {
-            background: rgba(5, 5, 5, 0.78);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-        .mobile-menu-open {
-            overflow: hidden;
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(26px);
-            transition: opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
-            will-change: opacity, transform;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-sequence .hero-step {
-            opacity: 0;
-            transform: translateY(24px);
-            animation: hero-step-in 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-        }
-        .hero-title .hero-line {
-            line-height: 1.15;
-            padding-bottom: 0.08em;
-        }
-        .hero-sequence .hero-step-1 { animation-delay: 0.225s; }
-        .hero-sequence .hero-step-2 { animation-delay: 0.675s; }
-        .hero-sequence .hero-step-3 { animation-delay: 1.2s; }
-        .hero-sequence .hero-step-4 { animation-delay: 1.65s; }
-        .hero-sequence .hero-step-5 { animation-delay: 1.95s; }
-
-        @keyframes hero-step-in {
-            from {
-                opacity: 0;
-                transform: translateY(24px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .hero-sequence .hero-step {
-                opacity: 1;
-                transform: none;
-                animation: none;
-            }
-        }
-
-        @keyframes blob {
-            0% { transform: translate3d(0, 0, 0) scale(1); }
-            33% { transform: translate3d(30px, -42px, 0) scale(1.08); }
-            66% { transform: translate3d(-18px, 18px, 0) scale(0.94); }
-            100% { transform: translate3d(0, 0, 0) scale(1); }
-        }
-        .animate-blob { animation: blob 20s ease-in-out infinite alternate; }
-        .animation-delay-2000 { animation-delay: 2s; }
-        .animation-delay-4000 { animation-delay: 4s; }
-
-        .hero-gradient {
-            background:
-                radial-gradient(58% 44% at 50% 24%, rgba(13, 232, 225, 0.18) 0%, rgba(13, 232, 225, 0) 72%),
-                radial-gradient(38% 30% at 82% 8%, rgba(45, 212, 191, 0.1) 0%, rgba(45, 212, 191, 0) 76%);
-        }
-
-        .card-hover {
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.38s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.38s ease, box-shadow 0.38s ease;
-        }
-        .card-hover::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -130%;
-            width: 46%;
-            height: 100%;
-            background: linear-gradient(112deg, transparent, rgba(13, 232, 225, 0.17), transparent);
-            transform: skewX(-18deg);
-            transition: left 0.82s ease;
-            pointer-events: none;
-            z-index: 1;
-        }
-        .card-hover:hover::before {
-            left: 150%;
-        }
-        .card-hover:hover {
-            transform: translateY(-6px);
-            border-color: rgba(13, 232, 225, 0.46);
-            box-shadow: 0 16px 42px -18px rgba(13, 232, 225, 0.45), 0 0 0 1px rgba(13, 232, 225, 0.18);
-        }
-
-        @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .text-gradient-animate {
-            background-size: 240% auto;
-            animation: gradientMove 8s ease-in-out infinite;
-        }
-
-        .is-typing::after {
-            content: "|";
-            margin-left: 1px;
-            color: rgba(13, 232, 225, 0.9);
-            animation: caretBlink 0.9s steps(1, end) infinite;
-        }
-        .line-clamp-4 {
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .client-logo {
-            transition: transform 0.28s ease;
-        }
-        .client-logo:hover {
-            transform: translateY(-2px);
-        }
-        .client-logo-marquee {
-            --client-logo-gap: 1.25rem;
-            --client-logo-duration: 9s;
-            --client-logo-item-width: 8rem;
-            overflow: hidden;
-            -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-            mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-        }
-        .client-logo-track {
-            display: flex;
-            width: max-content;
-            animation: clientLogoMarquee var(--client-logo-duration) linear infinite;
-            will-change: transform;
-        }
-        @media (hover: hover) and (pointer: fine) {
-            .client-logo-marquee:hover .client-logo-track {
-                animation-play-state: paused;
-            }
-        }
-        .client-logo-set {
-            display: flex;
-            align-items: center;
-            gap: var(--client-logo-gap);
-            padding-right: var(--client-logo-gap);
-            flex: 0 0 auto;
-        }
-        .client-logo-set > div {
-            width: var(--client-logo-item-width);
-        }
-        @media (min-width: 768px) {
-            .client-logo-marquee {
-                --client-logo-gap: 2.5rem;
-                --client-logo-duration: 28s;
-                --client-logo-item-width: 10rem;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .client-logo-track {
-                animation: none;
-            }
-        }
-        @keyframes clientLogoMarquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-        @keyframes caretBlink {
-            0%, 49% { opacity: 1; }
-            50%, 100% { opacity: 0; }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="bg-[#050505] font-sans text-gray-400 selection:bg-sky-500/30 overflow-x-hidden">
+<body data-page="home" class="bg-[#050505] font-sans text-gray-400 selection:bg-sky-500/30 overflow-x-hidden">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4XTKQ93"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -272,7 +88,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-between h-24 items-center">
                 <div class="flex-shrink-0 z-50">
-                    <img src="Public/Logo.png" alt="Agencia Kairos" class="h-16 lg:h-[6.3rem] w-auto block bg-transparent" />
+                    <a href="#inicio" aria-label="Agencia Kairos"><img src="Public/Logo.png" alt="Agencia Kairos" class="h-16 lg:h-[6.3rem] w-auto block bg-transparent" /></a>
                 </div>
 
                 <div class="lg:hidden flex items-center ml-auto z-50">
@@ -280,10 +96,10 @@
                         <i data-lucide="menu" class="w-7 h-7"></i>
                     </button>
                 </div>
-                
+
                 <div class="hidden lg:flex space-x-6 xl:space-x-10 text-[12px] uppercase tracking-[0.2em] font-medium ml-auto">
-                    <a href="#inicio" class="text-white hover:text-sky-400 transition-colors" data-i18n="nav_home">Inicio</a>
-                    <a href="#que-resolvemos" class="hover:text-sky-400 transition-colors" data-i18n="nav_services">Soluciones</a>
+                    <a href="#areas" class="hover:text-sky-400 transition-colors" data-i18n="nav_areas">Áreas</a>
+                    <a href="#casos" class="hover:text-sky-400 transition-colors" data-i18n="nav_cases">Casos</a>
                     <a href="#como-trabajamos" class="hover:text-sky-400 transition-colors" data-i18n="nav_methodology">Método</a>
                     <a href="#socios" class="hover:text-sky-400 transition-colors" data-i18n="nav_about">Socios</a>
                     <a href="#clientes" class="hover:text-sky-400 transition-colors" data-i18n="nav_clients">Clientes</a>
@@ -291,7 +107,7 @@
                 </div>
                 <div class="hidden lg:flex items-center ml-8">
                     <div class="flex items-center gap-2 mr-5">
-                        <a href="https://www.linkedin.com/company/agkairos-labs/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" data-i18n-aria="footer_linkedin_aria" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all">
+                        <a href="https://www.linkedin.com/company/agkairos-labs/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all">
                             <svg viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 fill-current">
                                 <path d="M6.6 8.8a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7ZM4.95 9.9h3.3V19h-3.3V9.9Zm5.15 0h3.16v1.24h.05c.44-.83 1.5-1.7 3.08-1.7 3.3 0 3.91 2.03 3.91 4.68V19H17v-4.33c0-1.03-.02-2.36-1.54-2.36-1.54 0-1.78 1.13-1.78 2.28V19H10.1V9.9Z"></path>
                             </svg>
@@ -314,8 +130,8 @@
             <button type="button" data-lang="pt-br" class="px-3 py-2 rounded-full text-white hover:text-sky-400 transition-colors">PT</button>
         </div>
         <div class="flex flex-col space-y-8 text-center text-xl uppercase tracking-[0.2em] font-medium">
-            <a href="#inicio" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_home">Inicio</a>
-            <a href="#que-resolvemos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_services">Soluciones</a>
+            <a href="#areas" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_areas">Áreas</a>
+            <a href="#casos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_cases">Casos</a>
             <a href="#como-trabajamos" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_methodology">Método</a>
             <a href="#socios" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_about">Socios</a>
             <a href="#clientes" class="text-white hover:text-sky-400 mobile-link transition-colors" data-i18n="nav_clients">Clientes</a>
@@ -323,87 +139,173 @@
         </div>
     </div>
 
-    <section id="inicio" class="relative pt-16 pb-16 md:pt-32 md:pb-32 overflow-hidden hero-gradient">
+    <section id="inicio" class="relative pt-16 pb-16 md:pt-32 md:pb-32 md:min-h-[86vh] flex items-center overflow-hidden isolate hero-gradient">
+        <div class="hero-photo" style="background-image:url('Public/fotos/hero-inicio.jpg')" aria-hidden="true"></div>
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
             <div class="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-sky-500/12 rounded-full mix-blend-screen blur-[120px] animate-blob"></div>
             <div class="absolute top-1/3 right-1/4 w-[26rem] h-[26rem] bg-sky-300/10 rounded-full mix-blend-screen blur-[120px] animate-blob animation-delay-2000"></div>
             <div class="absolute -bottom-36 left-1/3 w-[28rem] h-[28rem] bg-teal-500/12 rounded-full mix-blend-screen blur-[130px] animate-blob animation-delay-4000"></div>
         </div>
 
-        <div class="max-w-5xl mx-auto px-6 text-center relative z-10 hero-sequence">
+        <div class="w-full max-w-5xl mx-auto px-6 text-center relative z-10 hero-sequence">
             <h1 class="hero-title text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6 md:mb-[2.4rem] leading-[1.05]" data-i18n-html="hero_title">
                 <span class="hero-line block hero-step hero-step-1">Mejor operación.</span>
                 <span class="hero-line block hero-step hero-step-2">Menos costos.</span>
                 <span class="hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3">Más resultados.</span>
             </h1>
             <p class="text-base sm:text-lg md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-8 md:mb-12 font-light hero-step hero-step-4" data-i18n="hero_subtitle">
-                Cuando los procesos, la información y la tecnología dejan de acompañar al negocio, la operación empieza a costar más de lo que debería. Ahí entramos nosotros para revertirlo.
+                Cuando los procesos, la información y la tecnología dejan de acompañar al negocio, la operación empieza a escalar en costos y no en resultados. Nosotros nos ocupamos de resolverlo.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
                 <a href="#contacto" class="bg-sky-500 text-black px-10 py-4 rounded-full font-bold hover:bg-white transition-all text-sm uppercase tracking-widest hero-step hero-step-5" data-i18n="hero_cta_services">
-                    Quiero el diagnóstico
+                    Contacto
                 </a>
-                <a href="#como-trabajamos" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest hero-step hero-step-5" data-i18n="hero_cta_about">
-                    Método
+                <a href="#areas" class="border border-white/10 text-white px-10 py-4 rounded-full font-bold hover:bg-white/5 transition-all text-sm uppercase tracking-widest hero-step hero-step-5" data-i18n="hero_cta_areas">
+                    Ver áreas
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="que-resolvemos" class="py-32 bg-[#080808]">
+    <section id="areas" class="py-32 bg-[#080808]">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20 reveal">
-                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center whitespace-nowrap reveal" data-i18n="services_title">Soluciones</h2>
-                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="services_subtitle">Abordamos aquello que encarece la operación de tu empresa.</p>
+                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center reveal" data-i18n="areas_title">Áreas de especialización</h2>
+                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="areas_subtitle">Un mismo método aplicado al área donde tu negocio más lo necesita, apoyado en un equipo interdisciplinario.</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+
+            <div class="grid grid-cols-1 gap-6">
+                <a href="administracion-y-finanzas.html" class="area-card bg-gradient-to-br from-white/5 to-transparent p-8 md:p-10 rounded-[40px] border border-white/10 relative card-hover grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start reveal" style="transition-delay: 100ms;">
+                    <span class="area-card-cue absolute top-8 right-8 md:top-10 md:right-10 z-10 w-11 h-11 rounded-full border border-white/15 flex items-center justify-center text-sky-400" aria-hidden="true"><i data-lucide="arrow-up-right" class="w-5 h-5"></i></span>
+                    <div>
+                        <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="bar-chart-3" class="w-8 h-8"></i></div>
+                        <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_1_name">Administración y Finanzas</p>
+                        <h3 class="text-2xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="area_1_title">Números claros para marcar el rumbo del negocio.</h3>
+                        <p class="text-sm md:text-base text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="area_1_body">Trabajamos sobre tu información administrativa y financiera, y automatizamos las tareas que hoy te consumen horas.</p>
+                    </div>
+                    <ul class="space-y-3 z-10 relative md:pt-14">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_1_i1">Modelos financieros: Presupuestos y proyecciones por unidad de negocio</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_1_i2">Reporting: resultados, balance y flujo de fondos</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_1_i3">Automatización de liquidaciones y controles impositivos</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_1_i4">Tableros de gestión con indicadores a la medida de las necesidades de la gestión</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_1_i5">Procesos administrativos documentados y medibles</span></li>
+                    </ul>
+                </a>
+                <a href="recursos-humanos.html" class="area-card bg-gradient-to-br from-white/5 to-transparent p-8 md:p-10 rounded-[40px] border border-white/10 relative card-hover grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start reveal" style="transition-delay: 200ms;">
+                    <span class="area-card-cue absolute top-8 right-8 md:top-10 md:right-10 z-10 w-11 h-11 rounded-full border border-white/15 flex items-center justify-center text-sky-400" aria-hidden="true"><i data-lucide="arrow-up-right" class="w-5 h-5"></i></span>
+                    <div>
+                        <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="users-round" class="w-8 h-8"></i></div>
+                        <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_3_name">Recursos Humanos</p>
+                        <h3 class="text-2xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="area_3_title">El manejo de tu equipo para una gestión más eficiente</h3>
+                        <p class="text-sm md:text-base text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="area_3_body">Ordenamos la gestión de personal, analizamos tu fuerza laboral y diseñamos planes de compensación y de evaluación de desempeño a la medida de tu empresa.</p>
+                    </div>
+                    <ul class="space-y-3 z-10 relative md:pt-14">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_3_i1">Gestión de personal: ingresos, legajos, novedades, calendario de licencias y vacaciones, y descripciones de puestos</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_3_i3">Análisis y diseño del plan de compensaciones: estructura salarial, bandas y equidad interna</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_3_i4">Análisis y diseño del plan de evaluación de desempeño: objetivos, competencias y ciclos de feedback</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_3_i5">Automatización de procesos y acompañamiento en la adopción de nuevas herramientas</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_3_i6">Gestión del cambio</span></li>
+                    </ul>
+                </a>
+                <a href="marketing.html" class="area-card bg-gradient-to-br from-white/5 to-transparent p-8 md:p-10 rounded-[40px] border border-white/10 relative card-hover grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start reveal" style="transition-delay: 300ms;">
+                    <span class="area-card-cue absolute top-8 right-8 md:top-10 md:right-10 z-10 w-11 h-11 rounded-full border border-white/15 flex items-center justify-center text-sky-400" aria-hidden="true"><i data-lucide="arrow-up-right" class="w-5 h-5"></i></span>
+                    <div>
+                        <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="megaphone" class="w-8 h-8"></i></div>
+                        <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_4_name">Marketing</p>
+                        <h3 class="text-2xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="area_4_title">Una estrategia comercial que se mide, no que se intuye.</h3>
+                        <p class="text-sm md:text-base text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="area_4_body">Ordenamos tu presencia digital, definimos qué comunicar y a quién, y te damos un tablero para seguir los resultados.</p>
+                    </div>
+                    <ul class="space-y-3 z-10 relative md:pt-14">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_4_i1">Diagnóstico de marca y de canales digitales</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_4_i2">Estrategia diferenciada por línea de negocio</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_4_i3">Plan mensual de contenido, pauta y mailing</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_4_i4">Captación y organización de datos de clientes</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="area_4_i5">Tableros de métricas y automatización de la atención</span></li>
+                    </ul>
+                </a>
+            </div>
+
+            <p class="text-center text-gray-500 font-light max-w-3xl mx-auto mt-14 reveal" data-i18n="areas_closing">¿Tu necesidad cruza varias áreas? Esa es nuestra ventaja: un solo equipo mirando la empresa completa.</p>
+        </div>
+    </section>
+
+    <section id="casos" class="py-32 bg-[#050505]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center reveal" data-i18n="cases_title">Casos de éxito</h2>
+                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="cases_subtitle">Herramientas que ya construimos y que hoy usan empresas como la tuya.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 100ms;">
-                    <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="workflow" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="services_2_title">Crecimiento con escala operativa</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="services_2_body">Cada cliente nuevo suma planillas, actividades manuales y correcciones. Rediseñamos los procesos y automatizamos las tareas repetitivas para que facturar más no signifique gastar más.</p>
+                    <span class="text-6xl font-black text-white/10 leading-none mb-6 z-10 relative">01</span>
+                    <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_1_name">Administración y Finanzas</p>
+                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="case_1_title">Presupuesto general por unidad de negocio</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6 z-10 relative" data-i18n="case_1_body">Del sistema de gestión a un presupuesto de 12 meses, con objetivos por canal y por vendedor.</p>
+                    <ul class="space-y-3 mb-8 z-10 relative">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_1_i1">Basado en la información disponible</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_1_i2">Escenarios base, optimista y pesimista, tanto macro como micro</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_1_i3">Resultados por unidad de negocio, con punto de equilibrio</span></li>
+                    </ul>
                 </div>
-
                 <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 200ms;">
-                    <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="bar-chart-3" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="services_1_title">Mejor información para decidir</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="services_1_body">Cuando los números llegan tarde o no cierran, se decide por intuición. Ordenamos la información para la toma de decisiones. Para que sepas "mensualmente" dónde ganás y dónde perdés.</p>
+                    <span class="text-6xl font-black text-white/10 leading-none mb-6 z-10 relative">02</span>
+                    <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_1_name">Administración y Finanzas</p>
+                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="case_2_title">Modelo financiero integrado</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6 z-10 relative" data-i18n="case_2_body">Estado de resultados, balance y flujo de fondos integrados, a 20 años.</p>
+                    <ul class="space-y-3 mb-8 z-10 relative">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n-html="case_2_i1"><strong class="font-semibold text-white">Dinámico y conectado:</strong> Un cambio en cualquier supuesto actualiza todo el modelo en tiempo real.</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n-html="case_2_i2"><strong class="font-semibold text-white">Visión integral:</strong> Proyección unificada de capital de trabajo, endeudamiento y plan de inversiones</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n-html="case_2_i3"><strong class="font-semibold text-white">Control de riesgos:</strong> Anticipación de flujos críticos mediante alertas de caja.</span></li>
+                    </ul>
                 </div>
-
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 300ms;">
-                    <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="book-open-check" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="services_4_title">Autonomía operativa</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="services_4_body">Si el conocimiento queda solamente en las personas, el crecimiento tiene un techo. Documentamos procesos, capacitamos al equipo y convertimos ese conocimiento en un activo de la organización.</p>
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 100ms;">
+                    <span class="text-6xl font-black text-white/10 leading-none mb-6 z-10 relative">03</span>
+                    <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_1_name">Administración y Finanzas</p>
+                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="case_3_title">Aplicación integral de gestión impositiva</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6 z-10 relative" data-i18n="case_3_body">Una aplicación web para que un estudio contable liquide y controle los impuestos de toda su cartera de clientes.</p>
+                    <ul class="space-y-3 mb-8 z-10 relative">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_3_i1">Gestiona toda la cartera del estudio desde una sola plataforma, con roles y clientes asignados a cada profesional del equipo.</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_3_i2">Liquida IVA e Ingresos Brutos en el acto, y hace el seguimiento de vencimientos y recategorizaciones de Monotributo.</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_3_i3">Cruza la información automáticamente, detecta diferencias o inconsistencias, antes de presentar y guarda un historial auditable.</span></li>
+                    </ul>
                 </div>
-
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 400ms;">
-                    <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="users-round" class="w-8 h-8"></i></div>
-                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="services_3_title">Cambios sostenibles</h3>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="services_3_body">Los procesos nuevos sin una buena gestión del cambio no pasan de ser un proyecto. Trabajamos junto a líderes y equipos para que la nueva forma de trabajar se sostenga después de que el proyecto termina.</p>
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 200ms;">
+                    <span class="text-6xl font-black text-white/10 leading-none mb-6 z-10 relative">04</span>
+                    <p class="text-xs font-black text-sky-500 uppercase tracking-[0.3em] mb-3 z-10 relative" data-i18n="area_2_name">Logística</p>
+                    <h3 class="text-xl font-bold text-white mb-4 z-10 relative leading-snug" data-i18n="case_4_title">Aplicación integral de gestión de flota</h3>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6 z-10 relative" data-i18n="case_4_body">Una aplicación web para gestión y seguimiento de la operación diaria de los vehículos, como así también incidencias y reparaciones.</p>
+                    <ul class="space-y-3 mb-8 z-10 relative">
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_4_i1">Plataformas de gestión de flota a medida</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_4_i2">Circuito de reparaciones de flota, presupuestos y órdenes de trabajo</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_4_i3">Control de documentación y mantenimiento</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_4_i4">Accesos diferenciados para empresas, choferes y administración</span></li>
+                            <li class="flex gap-3 text-sm text-gray-300 font-light leading-relaxed"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span><span data-i18n="case_4_i5">Reportes operativos exportables</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-   <section id="como-trabajamos" class="py-32 bg-[#050505]">
+   <section id="como-trabajamos" class="py-32 bg-[#080808]">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20 reveal">
                 <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.6em] mb-6 text-center reveal" data-i18n="methodology_title">Método</h2>
-                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="methodology_subtitle">Un proceso integral de 3 fases, cada una con algo concreto en tus manos.</p>
+                <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto" data-i18n="methodology_subtitle">Un proceso integral de 3 fases, cada una con un informe de devolución concreta.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
                 
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 100ms;">
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" data-type-card style="transition-delay: 100ms;">
                     <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="target" class="w-8 h-8"></i></div>
                     <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="methodology_1_title">Fase 1 — Diagnóstico</h3>
                     <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="methodology_1_body">
-                        Miramos la operación completa: procesos, información, herramientas y costos. Elaboramos un mapa de dónde se pierde tiempo y dinero, con las oportunidades ordenadas por impacto.
+                        Revisamos la operación completa: procesos, información, herramientas y costos. Elaboramos un mapa de dónde se pierde tiempo y dinero, con las oportunidades ordenadas por impacto.
                     </p>
                     <p class="text-sm text-white font-semibold leading-relaxed z-10 relative mt-6" data-i18n="methodology_1_deliverable">Entregable: informe de diagnóstico y prioridades.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 200ms;">
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" data-type-card style="transition-delay: 200ms;">
                     <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="route" class="w-8 h-8"></i></div>
                     <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="methodology_2_title">Fase 2 — Diseño</h3>
                     <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="methodology_2_body">
@@ -412,11 +314,11 @@
                     <p class="text-sm text-white font-semibold leading-relaxed z-10 relative mt-6" data-i18n="methodology_2_deliverable">Entregable: hoja de ruta con alcance, plazos y responsables.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" style="transition-delay: 300ms;">
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 rounded-[40px] border border-white/10 relative card-hover flex flex-col reveal" data-type-card style="transition-delay: 300ms;">
                     <div class="text-sky-500 mb-6 z-10 relative"><i data-lucide="rocket" class="w-8 h-8"></i></div>
                     <h3 class="text-xl font-bold text-white mb-4 z-10 relative" data-i18n="methodology_3_title">Fase 3 — Implementación</h3>
                     <p class="text-sm text-gray-400 font-light leading-relaxed z-10 relative" data-i18n="methodology_3_body">
-                        Ejecutamos: rediseño operativo, automatizaciones, software o agentes de inteligencia artificial, trabajando con tu equipo para que la nueva forma de trabajar quede instalada.
+                        Ejecutamos: rediseño operativo, automatizaciones, desarrollo de software o agentes de inteligencia artificial, trabajando con tu equipo para que la nueva forma de trabajar quede instalada.
                     </p>
                     <p class="text-sm text-white font-semibold leading-relaxed z-10 relative mt-6" data-i18n="methodology_3_deliverable">Entregable: procesos funcionando y equipo capacitado.</p>
                 </div>
@@ -437,23 +339,20 @@
                     <h3 class="text-3xl font-bold text-white text-center mb-2">Luciano Ribeiro</h3>
                     <p class="text-sm uppercase tracking-[0.24em] text-sky-400 text-center mb-8" data-i18n="founder_title">Cofundador</p>
                     <div id="bio-luciano" class="text-base text-gray-300 leading-relaxed font-light" data-i18n-html="bio_luciano">
-                        16 años de experiencia internacional combinando tecnología, recursos humanos e inteligencia artificial en procesos de transformación de negocios. Graduado en Dirección de Negocios en Montgomery College, Maryland. En Kairos lidera el diseño de procesos y la adopción por parte de los equipos.
+                        20 años de experiencia internacional combinando tecnología, recursos humanos e inteligencia artificial en procesos de transformación de negocios. Graduado en Dirección de Negocios en Montgomery College, Maryland. En Kairos lidera el diseño de procesos y la adopción por parte de los equipos.
                     </div>
-                    <a href="https://www.linkedin.com/in/luciano-ribeiro-0274521b/" target="_blank" rel="noopener" aria-label="LinkedIn Luciano Ribeiro" class="mt-6 inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all self-start">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 fill-current">
-                            <path d="M6.6 8.8a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7ZM4.95 9.9h3.3V19h-3.3V9.9Zm5.15 0h3.16v1.24h.05c.44-.83 1.5-1.7 3.08-1.7 3.3 0 3.91 2.03 3.91 4.68V19H17v-4.33c0-1.03-.02-2.36-1.54-2.36-1.54 0-1.78 1.13-1.78 2.28V19H10.1V9.9Z"></path>
-                        </svg>
-                    </a>
-                    <div class="mt-3 flex items-center gap-2 self-start">
+                    <div class="mt-auto pt-6 flex items-center gap-2 self-start">
+                        <a href="https://www.linkedin.com/in/luciano-ribeiro-0274521b/" target="_blank" rel="noopener" aria-label="LinkedIn Luciano Ribeiro" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 fill-current">
+                                <path d="M6.6 8.8a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7ZM4.95 9.9h3.3V19h-3.3V9.9Zm5.15 0h3.16v1.24h.05c.44-.83 1.5-1.7 3.08-1.7 3.3 0 3.91 2.03 3.91 4.68V19H17v-4.33c0-1.03-.02-2.36-1.54-2.36-1.54 0-1.78 1.13-1.78 2.28V19H10.1V9.9Z"></path>
+                            </svg>
+                        </a>
                         <a href="https://www.instagram.com/lcorrearibeiro/" target="_blank" rel="noopener" aria-label="Instagram Luciano Ribeiro" title="Instagram" data-i18n-aria="footer_instagram_aria" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all">
                             <svg viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4">
                                 <rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.8" ry="4.8" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
                                 <circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
                                 <circle cx="17.3" cy="6.8" r="1.1" fill="currentColor"></circle>
                             </svg>
-                        </a>
-                        <a href="https://lucianocribeiro.substack.com/" target="_blank" rel="noopener" aria-label="Newsletter Luciano Ribeiro" title="Newsletter" data-i18n-aria="footer_newsletter_aria" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all">
-                            <i data-lucide="mail" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </article>
@@ -463,13 +362,15 @@
                     <h3 class="text-3xl font-bold text-white text-center mb-2">Santiago Konstantinovsky</h3>
                     <p class="text-sm uppercase tracking-[0.24em] text-sky-400 text-center mb-8" data-i18n="founder_title">Cofundador</p>
                     <div id="bio-santiago" class="text-base text-gray-300 leading-relaxed font-light" data-i18n-html="bio_santiago">
-                        20 años de experiencia en el sector privado y público conectando estrategia financiera con diseño operativo. Licenciado en Economía y Magíster en Finanzas. En Kairos lidera el diagnóstico administrativo y financiero.
+                        20 años de experiencia en el sector privado y público conectando estrategia financiera con diseño operativo. Licenciado en Economía y Magíster en Finanzas. En Kairos lidera el diseño de procesos y el diagnóstico administrativo y financiero.
                     </div>
-                    <a href="https://www.linkedin.com/in/santiago-konstantinovsky-7ba72274/" target="_blank" rel="noopener" aria-label="LinkedIn Santiago Konstantinovsky" class="mt-6 inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all self-start">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 fill-current">
-                            <path d="M6.6 8.8a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7ZM4.95 9.9h3.3V19h-3.3V9.9Zm5.15 0h3.16v1.24h.05c.44-.83 1.5-1.7 3.08-1.7 3.3 0 3.91 2.03 3.91 4.68V19H17v-4.33c0-1.03-.02-2.36-1.54-2.36-1.54 0-1.78 1.13-1.78 2.28V19H10.1V9.9Z"></path>
-                        </svg>
-                    </a>
+                    <div class="mt-auto pt-6 flex items-center gap-2 self-start">
+                        <a href="https://www.linkedin.com/in/santiago-konstantinovsky-7ba72274/" target="_blank" rel="noopener" aria-label="LinkedIn Santiago Konstantinovsky" class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/90 hover:text-white hover:border-sky-400/80 transition-all">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 fill-current">
+                                <path d="M6.6 8.8a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7ZM4.95 9.9h3.3V19h-3.3V9.9Zm5.15 0h3.16v1.24h.05c.44-.83 1.5-1.7 3.08-1.7 3.3 0 3.91 2.03 3.91 4.68V19H17v-4.33c0-1.03-.02-2.36-1.54-2.36-1.54 0-1.78 1.13-1.78 2.28V19H10.1V9.9Z"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -484,13 +385,13 @@
                 <div class="client-logo-track">
                     <div class="client-logo-set">
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/bi.png" alt="Be Influencers" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/bi-transparent.png" alt="Be Influencers" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
                             <img src="Public/fb.png" alt="First Blades" loading="eager" decoding="async" class="client-logo h-[2.8rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/maia.png" alt="Maia Sedaca Arquitectura" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/maia-transparent.png" alt="Maia Sedaca Arquitectura" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
                             <img src="Public/solesilva-transparent.png" alt="Sole Silva" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
@@ -502,18 +403,18 @@
                             <img src="Public/hotelfincaelrecreo.png?v=transparent-1" alt="Hotel Finca El Recreo" loading="eager" decoding="async" class="client-logo h-[5.88rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/vl-transparent.png" alt="VLITORL Logística" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/vl-transparent.png" alt="Vettore Logística" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                     </div>
                     <div class="client-logo-set" aria-hidden="true">
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/bi.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/bi-transparent.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
                             <img src="Public/fb.png" alt="" loading="eager" decoding="async" class="client-logo h-[2.8rem] w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
-                            <img src="Public/maia.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
+                            <img src="Public/maia-transparent.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
                         </div>
                         <div class="shrink-0 h-24 flex items-center justify-center">
                             <img src="Public/solesilva-transparent.png" alt="" loading="eager" decoding="async" class="client-logo h-14 w-auto max-w-[10rem] object-contain" />
@@ -530,7 +431,6 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 clients-case-grid"></div>
         </div>
     </section>
 
@@ -566,511 +466,6 @@
         </div>
     </footer>
 
-    <script>
-        const translations = {
-            es: {
-                title: "Agencia Kairos | Consultoría en procesos, finanzas y tecnología para PyMEs",
-                meta_description: "Ayudamos a empresas a bajar el costo de su operación y mejorar sus resultados, trabajando sobre procesos, información y tecnología. Diagnóstico inicial sin costo.",
-                og_locale: "es_AR",
-                nav_home: "Inicio",
-                nav_about: "Socios",
-                nav_services: "Soluciones",
-                nav_methodology: "Método",
-                nav_clients: "Clientes",
-                nav_contact: "Contacto",
-                hero_title: "<span class=\"hero-line block hero-step hero-step-1\">Mejor operación.</span><span class=\"hero-line block hero-step hero-step-2\">Menos costos.</span><span class=\"hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3\">Más resultados.</span>",
-                hero_subtitle: "Cuando los procesos, la información y la tecnología dejan de acompañar al negocio, la operación empieza a costar más de lo que debería. Ahí entramos nosotros para revertirlo.",
-                hero_cta_services: "Quiero el diagnóstico",
-                hero_cta_about: "Método",
-                services_title: "Soluciones",
-                services_subtitle: "Abordamos aquello que encarece la operación de tu empresa.",
-                services_1_title: "Mejor información para decidir",
-                services_1_body: "Cuando los números llegan tarde o no cierran, se decide por intuición. Ordenamos la información para la toma de decisiones. Para que sepas \"mensualmente\" dónde ganás y dónde perdés.",
-                services_2_title: "Crecimiento con escala operativa",
-                services_2_body: "Cada cliente nuevo suma planillas, actividades manuales y correcciones. Rediseñamos los procesos y automatizamos las tareas repetitivas para que facturar más no signifique gastar más.",
-                services_3_title: "Cambios sostenibles",
-                services_3_body: "Los procesos nuevos sin una buena gestión del cambio no pasan de ser un proyecto. Trabajamos junto a líderes y equipos para que la nueva forma de trabajar se sostenga después de que el proyecto termina.",
-                services_4_title: "Autonomía operativa",
-                services_4_body: "Si el conocimiento queda solamente en las personas, el crecimiento tiene un techo. Documentamos procesos, capacitamos al equipo y convertimos ese conocimiento en un activo de la organización.",
-                methodology_title: "Método",
-                methodology_subtitle: "Un proceso integral de 3 fases, cada una con algo concreto en tus manos.",
-                methodology_1_title: "Fase 1 — Diagnóstico",
-                methodology_1_body: "Miramos la operación completa: procesos, información, herramientas y costos. Elaboramos un mapa de dónde se pierde tiempo y dinero, con las oportunidades ordenadas por impacto.",
-                methodology_1_deliverable: "Entregable: informe de diagnóstico y prioridades.",
-                methodology_2_title: "Fase 2 — Diseño",
-                methodology_2_body: "Definimos cómo debería funcionar la empresa: qué procesos se rediseñan, qué se automatiza, qué información hay que empezar a medir y en qué orden conviene hacerlo.",
-                methodology_2_deliverable: "Entregable: hoja de ruta con alcance, plazos y responsables.",
-                methodology_3_title: "Fase 3 — Implementación",
-                methodology_3_body: "Ejecutamos: rediseño operativo, automatizaciones, software o agentes de inteligencia artificial, trabajando con tu equipo para que la nueva forma de trabajar quede instalada.",
-                methodology_3_deliverable: "Entregable: procesos funcionando y equipo capacitado.",
-                founders_section_title: "Socios",
-                founders_subtitle: "Cada empresa recibe una solución diseñada para su tamaño, su estructura y su momento.",
-                founder_title: "Cofundador",
-                read_more: "Leer más",
-                read_less: "Ver menos",
-                bio_luciano: "16 años de experiencia internacional combinando tecnología, recursos humanos e inteligencia artificial en procesos de transformación de negocios. Graduado en Dirección de Negocios en Montgomery College, Maryland. En Kairos lidera el diseño de procesos y la adopción por parte de los equipos.",
-                bio_santiago: "20 años de experiencia en el sector privado y público conectando estrategia financiera con diseño operativo. Licenciado en Economía y Magíster en Finanzas. En Kairos lidera el diagnóstico administrativo y financiero.",
-                clients_title: "Empresas con las que ya estamos optimizando la operación",
-                clients_logos_aria: "Logos de clientes",
-                footer_title: "Hablemos de tu operación.",
-                footer_form_name: "Nombre",
-                footer_form_name_placeholder: "Tu nombre",
-                footer_form_email: "Email",
-                footer_form_email_placeholder: "tu@email.com",
-                footer_form_message: "Mensaje",
-                footer_form_message_placeholder: "Escribe tu mensaje",
-                footer_form_submit: "Quiero el diagnóstico",
-                footer_form_submitting: "Enviando...",
-                footer_form_success: "Mensaje enviado correctamente.",
-                footer_form_error: "No se pudo enviar. Intenta nuevamente.",
-                footer_form_missing_webhook: "Falta configurar la URL del webhook.",
-                footer_copy: "© 2026 Agencia Kairos SRL. Procesos, información y tecnología.",
-                footer_linkedin_aria: "LinkedIn",
-                footer_linkedin_label: "LinkedIn",
-                footer_instagram_aria: "Instagram",
-                footer_instagram_label: "Instagram",
-                footer_newsletter_aria: "Newsletter",
-                footer_newsletter_label: "Newsletter"
-            },
-            en: {
-                title: "Agencia Kairos | Process, finance and technology consulting for SMBs",
-                meta_description: "We help companies lower the cost of their operations and improve results by working on processes, information and technology. Free initial diagnostic.",
-                og_locale: "en_US",
-                nav_home: "Home",
-                nav_about: "Founders",
-                nav_services: "Solutions",
-                nav_methodology: "Method",
-                nav_clients: "Clients",
-                nav_contact: "Contact",
-                hero_title: "<span class=\"hero-line block hero-step hero-step-1\">Better operations.</span><span class=\"hero-line block hero-step hero-step-2\">Lower costs.</span><span class=\"hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3\">Stronger results.</span>",
-                hero_subtitle: "When processes, information and technology stop keeping up with the business, operations start costing more than they should. That's where we come in.",
-                hero_cta_services: "Get my diagnostic",
-                hero_cta_about: "Method",
-                services_title: "Solutions",
-                services_subtitle: "We tackle what makes your company's operations more expensive.",
-                services_1_title: "Better-informed decisions",
-                services_1_body: "When the numbers arrive late or don't add up, decisions get made on gut feel. We organize administrative and financial information so you know, month by month, where you make money and where you lose it.",
-                services_2_title: "Growth with operational scale",
-                services_2_body: "Every new client adds spreadsheets, manual work and rework. We redesign processes and automate the repetitive so that billing more doesn't mean spending proportionally more.",
-                services_3_title: "Sustainable changes",
-                services_3_body: "Without proper change management, new processes never outlive the project. We work alongside leaders and teams so the new way of working holds long after the project ends.",
-                services_4_title: "Operational autonomy",
-                services_4_body: "As long as knowledge lives in people rather than in the company, there's a ceiling. We document processes, train the team and turn that knowledge into an asset of the organization.",
-                methodology_title: "Method",
-                methodology_subtitle: "An integrated three-phase process, each one ending with something concrete in your hands.",
-                methodology_1_title: "Phase 1 — Diagnosis",
-                methodology_1_body: "We look at the entire operation: processes, information, tools and costs. We build a map of where time and money are being lost, with opportunities ranked by impact.",
-                methodology_1_deliverable: "Deliverable: diagnostic and priorities report.",
-                methodology_2_title: "Phase 2 — Design",
-                methodology_2_body: "We define how the company should work: which processes to redesign, what to automate, what information to start measuring and in what order.",
-                methodology_2_deliverable: "Deliverable: roadmap with scope, timelines and owners.",
-                methodology_3_title: "Phase 3 — Implementation",
-                methodology_3_body: "We execute: operational redesign, automations, software or AI agents, working with your team so the new way of working is fully embedded.",
-                methodology_3_deliverable: "Deliverable: processes running and team trained.",
-                founders_section_title: "Founders",
-                founders_subtitle: "Every company gets a solution designed for its size, its structure and its stage.",
-                founder_title: "Co-founder",
-                read_more: "Read more",
-                read_less: "Read less",
-                bio_luciano: "16 years of international experience combining technology, human resources and artificial intelligence in business transformation. Degree in Business Management from Montgomery College, Maryland. At Kairos he leads process design and team adoption.",
-                bio_santiago: "20 years of experience across the private and public sectors, connecting financial strategy with operational design. Degree in Economics and a Master's in Finance. At Kairos he leads administrative and financial diagnosis.",
-                clients_title: "Companies whose operations we are already optimizing",
-                clients_logos_aria: "Client logos",
-                footer_title: "Let's talk about your operation.",
-                footer_form_name: "Name",
-                footer_form_name_placeholder: "Your name",
-                footer_form_email: "Email",
-                footer_form_email_placeholder: "you@email.com",
-                footer_form_message: "Message",
-                footer_form_message_placeholder: "Write your message",
-                footer_form_submit: "Get my diagnostic",
-                footer_form_submitting: "Sending...",
-                footer_form_success: "Message sent successfully.",
-                footer_form_error: "We could not send your message. Please try again.",
-                footer_form_missing_webhook: "Webhook URL is not configured yet.",
-                footer_copy: "© 2026 Agencia Kairos SRL. Processes, information and technology.",
-                footer_linkedin_aria: "LinkedIn",
-                footer_linkedin_label: "LinkedIn",
-                footer_instagram_aria: "Instagram",
-                footer_instagram_label: "Instagram",
-                footer_newsletter_aria: "Newsletter",
-                footer_newsletter_label: "Newsletter"
-            },
-            "pt-br": {
-                title: "Agencia Kairos | Consultoria em processos, finanças e tecnologia para PMEs",
-                meta_description: "Ajudamos empresas a reduzir o custo da sua operação e melhorar seus resultados, trabalhando processos, informação e tecnologia. Diagnóstico inicial sem custo.",
-                og_locale: "pt_BR",
-                nav_home: "Início",
-                nav_about: "Sócios",
-                nav_services: "Soluções",
-                nav_methodology: "Método",
-                nav_clients: "Clientes",
-                nav_contact: "Contato",
-                hero_title: "<span class=\"hero-line block hero-step hero-step-1\">Melhor operação.</span><span class=\"hero-line block hero-step hero-step-2\">Menos custos.</span><span class=\"hero-line text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-sky-400 text-gradient-animate block hero-step hero-step-3\">Mais resultados.</span>",
-                hero_subtitle: "Quando os processos, a informação e a tecnologia deixam de acompanhar o negócio, a operação começa a custar mais do que deveria. É aí que entramos para reverter isso.",
-                hero_cta_services: "Quero o diagnóstico",
-                hero_cta_about: "Método",
-                services_title: "Soluções",
-                services_subtitle: "Resolvemos aquilo que encarece a operação da sua empresa.",
-                services_1_title: "Decisões com melhor informação",
-                services_1_body: "Quando os números chegam tarde ou não fecham, decide-se por intuição. Organizamos a informação administrativa e financeira para que você saiba, mês a mês, onde ganha e onde perde.",
-                services_2_title: "Crescimento com escala operacional",
-                services_2_body: "Cada novo cliente soma planilhas, tarefas manuais e correções. Redesenhamos os processos e automatizamos o repetitivo para que faturar mais não signifique gastar na mesma proporção.",
-                services_3_title: "Mudanças sustentáveis",
-                services_3_body: "Os processos novos, sem uma boa gestão da mudança, não passam de um projeto. Trabalhamos junto a líderes e equipes para que a nova forma de trabalhar se sustente depois que o projeto termina.",
-                services_4_title: "Autonomia operacional",
-                services_4_body: "Enquanto o conhecimento viver nas pessoas e não na empresa, há um teto. Documentamos processos, capacitamos a equipe e transformamos esse conhecimento em um ativo da organização.",
-                methodology_title: "Método",
-                methodology_subtitle: "Um processo integral de 3 fases, cada uma com algo concreto nas suas mãos.",
-                methodology_1_title: "Fase 1 — Diagnóstico",
-                methodology_1_body: "Olhamos a operação completa: processos, informação, ferramentas e custos. Elaboramos um mapa de onde se perde tempo e dinheiro, com as oportunidades ordenadas por impacto.",
-                methodology_1_deliverable: "Entregável: relatório de diagnóstico e prioridades.",
-                methodology_2_title: "Fase 2 — Desenho",
-                methodology_2_body: "Definimos como a empresa deveria funcionar: quais processos redesenhar, o que automatizar, qual informação começar a medir e em que ordem.",
-                methodology_2_deliverable: "Entregável: roteiro com escopo, prazos e responsáveis.",
-                methodology_3_title: "Fase 3 — Implementação",
-                methodology_3_body: "Executamos: redesenho operacional, automações, software ou agentes de inteligência artificial, trabalhando com sua equipe para que a nova forma de trabalhar fique instalada.",
-                methodology_3_deliverable: "Entregável: processos funcionando e equipe capacitada.",
-                founders_section_title: "Sócios",
-                founders_subtitle: "Cada empresa recebe uma solução desenhada para seu tamanho, sua estrutura e seu momento.",
-                founder_title: "Cofundador",
-                read_more: "Leia mais",
-                read_less: "Ver menos",
-                bio_luciano: "16 anos de experiência internacional combinando tecnologia, recursos humanos e inteligência artificial em processos de transformação de negócios. Graduado em Direção de Negócios pelo Montgomery College, Maryland. Na Kairos, lidera o desenho de processos e a adoção pelas equipes.",
-                bio_santiago: "20 anos de experiência nos setores privado e público conectando estratégia financeira com desenho operacional. Bacharel em Economia e Mestre em Finanças. Na Kairos, lidera o diagnóstico administrativo e financeiro.",
-                clients_title: "Empresas com as quais já estamos otimizando a operação",
-                clients_logos_aria: "Logos de clientes",
-                footer_title: "Vamos falar da sua operação.",
-                footer_form_name: "Nome",
-                footer_form_name_placeholder: "Seu nome",
-                footer_form_email: "E-mail",
-                footer_form_email_placeholder: "nome@email.com",
-                footer_form_message: "Mensagem",
-                footer_form_message_placeholder: "Escreva sua mensagem",
-                footer_form_submit: "Quero o diagnóstico",
-                footer_form_submitting: "Enviando...",
-                footer_form_success: "Mensagem enviada com sucesso.",
-                footer_form_error: "Não foi possível enviar. Tente novamente.",
-                footer_form_missing_webhook: "A URL do webhook ainda não está configurada.",
-                footer_copy: "© 2026 Agencia Kairos SRL. Processos, informação e tecnologia.",
-                footer_linkedin_aria: "LinkedIn",
-                footer_linkedin_label: "LinkedIn",
-                footer_instagram_aria: "Instagram",
-                footer_instagram_label: "Instagram",
-                footer_newsletter_aria: "Newsletter",
-                footer_newsletter_label: "Newsletter"
-            }
-        };
-
-        const setLanguage = (lang) => {
-            const strings = translations[lang] || translations.es;
-            document.title = strings.title;
-            document.documentElement.lang = lang;
-            document.querySelector('meta[name="description"]')?.setAttribute("content", strings.meta_description);
-            document.querySelector('meta[property="og:locale"]')?.setAttribute("content", strings.og_locale);
-            document.querySelector('meta[property="og:title"]')?.setAttribute("content", strings.title);
-            document.querySelector('meta[property="og:description"]')?.setAttribute("content", strings.meta_description);
-            document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", strings.title);
-            document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", strings.meta_description);
-
-            document.querySelectorAll("[data-i18n]").forEach((el) => {
-                const key = el.getAttribute("data-i18n");
-                if (strings[key]) {
-                    const nextText = strings[key];
-                    const card = el.closest(".card-hover, .type-card");
-                    if (card && card.dataset.typed !== "true") {
-                        el.dataset.typewriterSource = nextText;
-                        el.textContent = "";
-                    } else {
-                        delete el.dataset.typewriterSource;
-                        el.textContent = nextText;
-                    }
-                }
-            });
-
-            document.querySelectorAll("[data-i18n-html]").forEach((el) => {
-                const key = el.getAttribute("data-i18n-html");
-                if (strings[key]) {
-                    el.innerHTML = strings[key];
-                }
-            });
-
-            document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
-                const key = el.getAttribute("data-i18n-aria");
-                if (strings[key]) {
-                    el.setAttribute("aria-label", strings[key]);
-                }
-            });
-
-            document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-                const key = el.getAttribute("data-i18n-placeholder");
-                if (strings[key]) {
-                    el.setAttribute("placeholder", strings[key]);
-                }
-            });
-
-            updateReadToggleLabels(strings);
-
-            document.querySelectorAll("[data-lang]").forEach((button) => {
-                const active = button.getAttribute("data-lang") === lang;
-                button.classList.toggle("bg-white/10", active);
-                button.classList.toggle("text-white", active);
-            });
-        };
-
-        const updateReadToggleLabels = (strings) => {
-            document.querySelectorAll("[data-read-toggle]").forEach((button) => {
-                const expanded = button.getAttribute("aria-expanded") === "true";
-                button.textContent = expanded ? strings.read_less : strings.read_more;
-            });
-        };
-
-        const toggleBioText = (button) => {
-            const bioId = button.getAttribute("data-target");
-            if (!bioId) return;
-
-            const bioElement = document.getElementById(bioId);
-            if (!bioElement) return;
-
-            const isExpanded = button.getAttribute("aria-expanded") === "true";
-            bioElement.classList.toggle("line-clamp-4", isExpanded);
-
-            const nextExpanded = !isExpanded;
-            button.setAttribute("aria-expanded", nextExpanded ? "true" : "false");
-            button.dataset.expanded = nextExpanded ? "true" : "false";
-
-            const lang = localStorage.getItem("lang") || "es";
-            const strings = translations[lang] || translations.es;
-            button.textContent = nextExpanded ? strings.read_less : strings.read_more;
-        };
-
-        const storedLang = localStorage.getItem("lang") || "es";
-        setLanguage(storedLang);
-
-        document.querySelectorAll("[data-lang]").forEach((button) => {
-            button.addEventListener("click", () => {
-                const lang = button.getAttribute("data-lang");
-                localStorage.setItem("lang", lang);
-                setLanguage(lang);
-            });
-        });
-
-        document.querySelectorAll("[data-read-toggle]").forEach((button) => {
-            button.addEventListener("click", () => toggleBioText(button));
-        });
-
-        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const mobileLinks = document.querySelectorAll(".mobile-link");
-        let menuOpen = false;
-
-        const toggleMenu = (forceState) => {
-            if (!mobileMenuBtn || !mobileMenu) return;
-
-            menuOpen = typeof forceState === "boolean" ? forceState : !menuOpen;
-            mobileMenu.classList.toggle("translate-x-full", !menuOpen);
-            document.body.classList.toggle("mobile-menu-open", menuOpen);
-            mobileMenuBtn.setAttribute("aria-expanded", menuOpen ? "true" : "false");
-            mobileMenuBtn.innerHTML = menuOpen
-                ? '<i data-lucide="x" class="w-7 h-7"></i>'
-                : '<i data-lucide="menu" class="w-7 h-7"></i>';
-            lucide.createIcons();
-        };
-
-        mobileMenuBtn?.addEventListener("click", () => toggleMenu());
-        mobileLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                if (menuOpen) toggleMenu(false);
-            });
-        });
-        window.addEventListener("resize", () => {
-            if (window.innerWidth >= 1024 && menuOpen) {
-                toggleMenu(false);
-            }
-        });
-        window.addEventListener("keydown", (event) => {
-            if (event.key === "Escape" && menuOpen) {
-                toggleMenu(false);
-            }
-        });
-
-        const revealElements = document.querySelectorAll(".reveal");
-        const typedElements = new WeakSet();
-
-        const typeText = (element, speed = 16) => {
-            if (!element || typedElements.has(element)) return Promise.resolve();
-
-            const sourceText = element.dataset.typewriterSource || element.textContent || "";
-            if (!sourceText.trim()) {
-                typedElements.add(element);
-                return Promise.resolve();
-            }
-
-            typedElements.add(element);
-            element.classList.add("is-typing");
-            element.textContent = "";
-
-            return new Promise((resolve) => {
-                let index = 0;
-                const tick = () => {
-                    index += 1;
-                    element.textContent = sourceText.slice(0, index);
-                    if (index < sourceText.length) {
-                        window.setTimeout(tick, speed);
-                    } else {
-                        delete element.dataset.typewriterSource;
-                        element.classList.remove("is-typing");
-                        resolve();
-                    }
-                };
-                tick();
-            });
-        };
-
-        const typeCardContent = async (card) => {
-            if (!card || card.dataset.typed === "true") return;
-            card.dataset.typed = "true";
-
-            const targets = card.querySelectorAll("h2[data-i18n], h3[data-i18n], h4[data-i18n], p[data-i18n]");
-            for (const target of targets) {
-                await typeText(target, 18);
-                await new Promise((resolve) => window.setTimeout(resolve, 90));
-            }
-        };
-
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
-                    if (entry.target.matches(".card-hover, .type-card")) {
-                        typeCardContent(entry.target);
-                    }
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            root: null,
-            threshold: 0.12,
-            rootMargin: "0px 0px -50px 0px"
-        });
-        revealElements.forEach((element) => revealObserver.observe(element));
-
-        const contactForm = document.getElementById("contact-form");
-        const contactSubmitButton = document.getElementById("contact-submit");
-        const contactStatus = document.getElementById("contact-status");
-        const CONTACT_WEBHOOK_URL =
-            contactForm?.dataset.webhookUrl ||
-            window.KAIROS_CONTACT_WEBHOOK_URL ||
-            "";
-
-        const postViaHiddenForm = (url, payload) => {
-            const iframeName = `webhook-target-${Date.now()}`;
-            const iframe = document.createElement("iframe");
-            iframe.name = iframeName;
-            iframe.style.display = "none";
-            document.body.appendChild(iframe);
-
-            const form = document.createElement("form");
-            form.method = "POST";
-            form.action = url;
-            form.target = iframeName;
-            form.style.display = "none";
-
-            Object.entries(payload).forEach(([key, value]) => {
-                const input = document.createElement("input");
-                input.type = "hidden";
-                input.name = key;
-                input.value = value ?? "";
-                form.appendChild(input);
-            });
-
-            document.body.appendChild(form);
-            form.submit();
-
-            setTimeout(() => {
-                form.remove();
-                iframe.remove();
-            }, 3000);
-        };
-
-        contactForm?.addEventListener("submit", async (event) => {
-            event.preventDefault();
-
-            const lang = localStorage.getItem("lang") || "es";
-            const strings = translations[lang] || translations.es;
-
-            if (!CONTACT_WEBHOOK_URL) {
-                contactStatus.textContent = strings.footer_form_missing_webhook;
-                contactStatus.classList.remove("text-sky-400");
-                contactStatus.classList.add("text-red-400");
-                return;
-            }
-
-            const formData = new FormData(contactForm);
-            const payload = {
-                Nombre: formData.get("name"),
-                Email: formData.get("email"),
-                Mensaje: formData.get("message")
-            };
-
-            contactSubmitButton.disabled = true;
-            contactStatus.textContent = strings.footer_form_submitting;
-            contactStatus.classList.remove("text-red-400");
-            contactStatus.classList.add("text-sky-400");
-
-            try {
-                const response = await fetch(CONTACT_WEBHOOK_URL, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(payload)
-                });
-
-                if (!response.ok) {
-                    throw new Error("Webhook request failed");
-                }
-
-                contactForm.reset();
-                contactStatus.textContent = strings.footer_form_success;
-            } catch (error) {
-                try {
-                    // Fallback for webhook endpoints that do not expose CORS headers.
-                    await fetch(CONTACT_WEBHOOK_URL, {
-                        method: "POST",
-                        mode: "no-cors",
-                        headers: {
-                            "Content-Type": "text/plain;charset=UTF-8"
-                        },
-                        body: JSON.stringify(payload)
-                    });
-
-                    contactForm.reset();
-                    contactStatus.textContent = strings.footer_form_success;
-                    contactStatus.classList.remove("text-red-400");
-                    contactStatus.classList.add("text-sky-400");
-                } catch (fallbackError) {
-                    try {
-                        postViaHiddenForm(CONTACT_WEBHOOK_URL, payload);
-                        contactForm.reset();
-                        contactStatus.textContent = strings.footer_form_success;
-                        contactStatus.classList.remove("text-red-400");
-                        contactStatus.classList.add("text-sky-400");
-                    } catch (formError) {
-                        console.error(error);
-                        console.error(fallbackError);
-                        console.error(formError);
-                        contactStatus.textContent = strings.footer_form_error;
-                        contactStatus.classList.remove("text-sky-400");
-                        contactStatus.classList.add("text-red-400");
-                    }
-                }
-            } finally {
-                contactSubmitButton.disabled = false;
-            }
-        });
-
-        lucide.createIcons();
-    </script>
+    <script src="assets/site.js"></script>
 </body>
 </html>
