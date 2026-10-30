@@ -262,3 +262,16 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
     .hero-photo { animation: none; }
 }
+
+/* Botón de WhatsApp en la sección de contacto */
+.whatsapp-btn {
+    background-color: #00c96b;
+    box-shadow: 0 10px 28px -14px rgba(0, 201, 107, 0.7);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-btn:hover,
+.whatsapp-btn:focus-visible {
+    background-color: #00b360;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px -12px rgba(0, 201, 107, 0.8);
+}

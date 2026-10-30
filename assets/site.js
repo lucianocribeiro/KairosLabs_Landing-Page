@@ -1,5 +1,6 @@
 const translations = {
     "es": {
+"footer_whatsapp": "Escribinos por WhatsApp",
 "title": "Agencia Kairos | Procesos, finanzas y tecnología para PyMEs",
 "meta_description": "Ordenamos la administración, las finanzas, la logística, los equipos y el marketing de tu empresa para que opere mejor y cueste menos. Diagnóstico inicial sin costo.",
 "og_locale": "es_AR",
@@ -104,6 +105,7 @@ const translations = {
 "case_4_i5": "Reportes operativos exportables"
     },
     "en": {
+"footer_whatsapp": "Message us on WhatsApp",
 "title": "Agencia Kairos | Processes, finance and technology for SMBs",
 "meta_description": "We organize the administration, finance, logistics, teams and marketing of your company so it operates better and costs less. Free initial diagnostic.",
 "og_locale": "en_US",
@@ -208,6 +210,7 @@ const translations = {
 "case_4_i5": "Exportable operational reports"
     },
     "pt-br": {
+"footer_whatsapp": "Fale conosco pelo WhatsApp",
 "title": "Agencia Kairos | Processos, finanças e tecnologia para PMEs",
 "meta_description": "Organizamos a administração, as finanças, a logística, as equipes e o marketing da sua empresa para que opere melhor e custe menos. Diagnóstico inicial sem custo.",
 "og_locale": "pt_BR",
